@@ -9,51 +9,47 @@
 
   <title>Testimonials</title>
 </head>
+
 <body>
-  <h1>Testimonials</h1>
+  <!-- arrows and "Testimonials" -->
   <div class="container">
-    <button>these will be side-by-side buttons</button>
-    <button>with arrows</button>
+    <div class="row justify-content-center topRow">
+      <div class="col-6 arrowButtons">
+        <button>left arrow button</button>
+      </div>
+      <div class="col-6 arrowButtons">
+        <button>right arrow button</button>
+      </div>
+      <h3>Testimonials</h3>
+    </div>
 
-    <!-- <div class="row"></div>
-      <div class="col">col 1</div>
-      <div class="col">col 2</div> -->
-
-  </div>
-  <div class="container">
-    <div class="row">
-      this is the specific testimonial container
-      <div class="container">
-        container for quote
-      </div>
-      <div class="container">
-        container for dark paragraph
-      </div>
-      <div class="container">
-        container for light paragraph
-      </div>
-      <!-- below may need to be columns instead of containers -->
-      <div class="container">
-        container for image box
-        <div class="container">
-          left side image
+    <br>
+    <div class="row middleRow">
+      <h1>quote</h1>
+      <p>dark paragraph</p>
+      <p>light paragraph</p>
+      <div class="row">
+        <div class="col-6 border">
+          <div>left side testimonial - image</div>
         </div>
-        <div class="container">
-          right side name & stars
+        <div class="col-6 border">
+          <div>right side testimonial - stars, name, google</div>
         </div>
-      </div>
-      <div class="container">
-        box for the buttons at the bottom
-        <h3>Trusted by brands all over the world</h3>
-        <button>spotify</button>
-        <button>we</button>
-        <button>slack</button>
-        <button>miro</button>
-        <button>Dropbox</button>
       </div>
     </div>
-    
+
+    <br>
+    <!-- Change this back to flex  -->
+    <div class="row bottomRow">
+      <h3>Trusted by brands all over the world</h3>
+      <div class="col-sm-12 col-md-6 border">
+      <button class="brandButton">spotify</button>
+      <button class="brandButton">we</button>
+      <button class="brandButton">slack</button>
+      <button class="brandButton">miro</button>
+      <button class="brandButton">Dropbox</button>
+      </div>
+    </div>
   </div>
-  
 </body>
 </html>

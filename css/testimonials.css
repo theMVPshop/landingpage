@@ -1,0 +1,25 @@
+.topRow{
+  border: 1px solid darkcyan;
+}
+.arrowButtons {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.middleRow{
+  border: 3px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottomRow{
+  border: 1px solid peru;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.brandButton{
+  width: 100%;
+}
