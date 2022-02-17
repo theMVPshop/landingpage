@@ -1,3 +1,37 @@
-.border-radius {
-    border-radius: 1rem;
+:root {
+   --black: #0f0d12; 
+   --blue-primary: royalblue;
+   --blue-secondary: mediumblue;
+   --dark-grey: #27262b;
+   --badge-color: lavender;
+   --white: #fdfdfd;
+   --light-grey: lightslategray;
+}
+
+.bg-black {
+   background-color: var(--black);
+}
+.bg-grey {
+   background-color: var(--dark-grey);
+}
+.bg-blue-primary {
+   background-color: var(--blue-primary);
+}
+.bg-blue-secondary {
+   background-color: var(--blue-secondary);
+}
+.bg-badge {
+   background-color: var(--badge-color);
+}
+.text-white {
+   color: var(--white);
+}
+.text-grey {
+   color: var(--light-grey);
+}
+.text-blue {
+   color: var(--blue-primary);
+}
+.width-100 {
+   width: 100%;
 }
