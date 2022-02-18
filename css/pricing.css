@@ -7,7 +7,9 @@
    --white: #fdfdfd;
    --light-grey: lightslategray;
 }
-
+body {
+   font-family: 'Secular One', sans-serif;
+}
 .bg-black {
    background-color: var(--black);
 }
@@ -35,3 +37,19 @@
 .width-100 {
    width: 100%;
 }
+.border-radius {
+   border-radius: 1rem;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid var(--light-grey);
+}
+.border-bottom-white {
+   border-bottom: 1px solid var(--white);
+ }
+ ul {
+    list-style: none;
+ }
+ ul,li {
+    margin: 0;
+    padding: 0;
+ }
