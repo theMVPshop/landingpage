@@ -1,3 +1,8 @@
+body {
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+}
+
 .img {
   width: 400px;
   height: 400px;
@@ -5,6 +10,10 @@
   object-position: top;
 }
 
-.name-bubble {
-  width: 100%;
+button {
+  width: 150px;
+}
+
+.dark-background {
+  background-color: rgb(31,30,35);
 }
