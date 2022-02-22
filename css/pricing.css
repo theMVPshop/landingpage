@@ -56,6 +56,6 @@ body {
     margin: 0;
     padding: 0;
  }
-button.accordion.button {
-   background-color: var(--blue-primary);
+ .accordion-button:not(.collapsed) {
+   background-color: var(--blue-secondary);
 }

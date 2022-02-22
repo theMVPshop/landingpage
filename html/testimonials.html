@@ -12,7 +12,7 @@
 
 <body>
   <!-- arrows and "Testimonials" -->
-  <div class="container">
+  <div class="container main d-flex flex-column align-items-center">
     <div class="row justify-content-center topRow">
       <div class="col-6 arrowButtons">
         <button>left arrow button</button>
@@ -20,35 +20,48 @@
       <div class="col-6 arrowButtons">
         <button>right arrow button</button>
       </div>
-      <h3>Testimonials</h3>
+      <h6>Testimonials</h6>
     </div>
 
     <br>
-    <div class="row middleRow">
-      <h1>quote</h1>
-      <p>dark paragraph</p>
-      <p>light paragraph</p>
-      <div class="row">
+    <div class="row d-flex flex-column align-items-center middleRow">
+      <h1 class="quote">Zospace has helped us work</h1>
+      <p class="paragraph">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+      <p class="paragraph text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+      <div class="row clientStarsContainer">
         <div class="col-6 border">
-          <div>left side testimonial - image</div>
+          <div class="portraitFrame">
+            <img class="portraitImage" src="../images/pexels-photo-5325840.jpeg"/>
+          </div>
         </div>
-        <div class="col-6 border">
-          <div>right side testimonial - stars, name, google</div>
-        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center border">
+          <div class="d-flex flex-column border">
+            <!-- the stars image is just showing a dot/ period -->
+            <!-- <img src="../images/stars.svg"> -->
+            <div>* * * * *</div>
+            <!-- This needs to be pulled in from a database -->
+            <h5>Léa Herrera</h5>
+            <!-- this also needs to be pulled in from a database, unless all are from Google
+            also, needs Google font;  -->
+            <h6>Google</h6>
+
+          </div>
       </div>
     </div>
 
     <br>
     <!-- Change this back to flex  -->
     <div class="row bottomRow">
-      <h3>Trusted by brands all over the world</h3>
-      <div class="col-sm-12 col-md-6 border">
-      <button class="brandButton">spotify</button>
-      <button class="brandButton">we</button>
-      <button class="brandButton">slack</button>
-      <button class="brandButton">miro</button>
-      <button class="brandButton">Dropbox</button>
+      <h6>Trusted by brands all over the world</h3>
+
+      <div class="d-flex justify-content-start justify-content-lg-between align-items-center buttonBox">
+        <button class="col-lg-2    justify-content-center brandButton"><img src="../images/spotify-box.svg"/></button>
+        <button class="col-lg-2    justify-content-center brandButton"><img src="../images/we-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/slack-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/miro-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/dropbox-box.svg"/></button>
       </div>
+
     </div>
   </div>
 </body>
