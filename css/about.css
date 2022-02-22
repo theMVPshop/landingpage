@@ -1,6 +1,9 @@
 body {
   font-family: 'Sen', sans-serif;
-  font-weight: bold;
+}
+
+h1 {
+  font-size: 53px;
 }
 
 .img {
@@ -10,10 +13,36 @@ body {
   object-position: top;
 }
 
-button {
+.btn {
   width: 150px;
+}
+
+.card-text-sm {
+  font-size: 18px;
+}
+
+.lead {
+  color: #495DDA;
 }
 
 .dark-background {
   background-color: rgb(31,30,35);
+}
+
+.blue-background {
+  background-color: rgb(33,63,255);
+  border: none;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.subscribe-now {
+  font-size: 45px;
+}
+
+.form-control::placeholder {
+  color: black;
+  opacity: 1;
 }
