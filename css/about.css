@@ -46,3 +46,8 @@ h1 {
   color: black;
   opacity: 1;
 }
+
+.line {
+  height: .5px;
+  background-color: gray;
+}
