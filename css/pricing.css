@@ -56,6 +56,10 @@ body {
     margin: 0;
     padding: 0;
  }
+ li img {
+    margin-right: 1rem;
+ }
  .accordion-button:not(.collapsed) {
    background-color: var(--blue-secondary);
+   color: var(--white);
 }
