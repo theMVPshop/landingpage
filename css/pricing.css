@@ -2,6 +2,7 @@
    --black: #0f0d12; 
    --blue-primary: royalblue;
    --blue-secondary: mediumblue;
+   --blue-third: lightskyblue;
    --dark-grey: #27262b;
    --badge-color: lavender;
    --white: #fdfdfd;
@@ -34,6 +35,9 @@ body {
 .text-blue {
    color: var(--blue-primary);
 }
+.text-blue-third {
+   color: var(--blue-third);
+}
 .width-100 {
    width: 100%;
 }
@@ -59,7 +63,32 @@ body {
  li img {
     margin-right: 1rem;
  }
+
+ /* make accordion header blue and text white when open */
  .accordion-button:not(.collapsed) {
    background-color: var(--blue-secondary);
    color: var(--white);
 }
+/* remove accordion button outline */
+.accordion-button:focus {
+   box-shadow: none;
+   border-color: rgba(0,0,0,.125);
+}
+
+span.badge, .accordion-button {
+   transition: 0.5s ease all;
+}
+/* make badge number white and background blue when accordion open */
+.accordion-button:not(.collapsed) span.badge {
+  background-color: var(--blue-primary);
+  color: var(--white) !important;
+}
+
+.margin-left-lg {
+   margin-left: 4.5rem;
+}
+.accordion-padding {
+   padding-left: 2rem;
+}
+
+/* how to give ENTIRE accordion content a border radius? */
