@@ -24,42 +24,103 @@
     </div>
 
     <br>
-    <div class="row d-flex flex-column align-items-center middleRow">
-      <h1 class="quote">Zospace has helped us work</h1>
-      <p class="paragraph">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
-      <p class="paragraph text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
-      <div class="row clientStarsContainer">
-        <div class="col-6 border">
-          <div class="portraitFrame">
-            <img class="portraitImage" src="../images/pexels-photo-5325840.jpeg"/>
+
+    <div id='myCarousel' class="carousel slide" 
+    data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" 
+        data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" 
+        data-slide-to="1"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <!-- first carousel item -->
+        <div class="carousel-item active row middleRow ">
+          <div class="container d-flex flex-column align-items-center middleRow .carousel-container">
+            <h1 class="quote">Zospace has helped us work</h1>
+            <p class="paragraph">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+            <p class="paragraph text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+            <div class="row clientStarsContainer">
+              <div class="col-6 border">
+                <div class="portraitFrame">
+                  <img class="portraitImage" src="../images/pexels-photo-5325840.jpeg"/>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column border">
+                  <!-- the stars image is just showing a dot/ period -->
+                  <!-- <img src="../images/stars.svg"> -->
+                  <div>* * * * *</div>
+                  <!-- This needs to be pulled in from a database -->
+                  <h5>Léa Herrera</h5>
+                  <!-- this also needs to be pulled in from a database, unless all are from Google
+                  also, needs Google font;  -->
+                  <h6>Google</h6>
+
+                </div>
+              </div>
+            </div>
+            <!-- from tutorial -->
+            <a href="#" class="btn btn-lg btn-primary">button to erase</a>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center border">
-          <div class="d-flex flex-column border">
-            <!-- the stars image is just showing a dot/ period -->
-            <!-- <img src="../images/stars.svg"> -->
-            <div>* * * * *</div>
-            <!-- This needs to be pulled in from a database -->
-            <h5>Léa Herrera</h5>
-            <!-- this also needs to be pulled in from a database, unless all are from Google
-            also, needs Google font;  -->
-            <h6>Google</h6>
 
+        <!-- second carousel item -->
+        <div class="carousel-item row middleRow">
+          <div class="container d-flex flex-column align-items-center middleRow .carousel-container">
+            <h1 class="quote">Zospace has helped us work</h1>
+            <p class="paragraph">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+            <p class="paragraph text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+            <div class="row clientStarsContainer">
+              <div class="col-6 border">
+                <div class="portraitFrame">
+                  <img class="portraitImage"/>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column border">
+                  <!-- the stars image is just showing a dot/ period -->
+                  <!-- <img src="../images/stars.svg"> -->
+                  <div>* * * * *</div>
+                  <!-- This needs to be pulled in from a database -->
+                  <h5>SECOND PERSONZ</h5>
+                  <!-- this also needs to be pulled in from a database, unless all are from Google
+                  also, needs Google font;  -->
+                  <h6>Google</h6>
+                </div>
+              </div>
+            </div>
+            <!-- from tutorial -->
+            <a href="#" class="btn btn-lg btn-primary">button to erase</a>
           </div>
+        </div>
       </div>
+
+      <a href="#myCarousel"
+      class="carousel-control-prev" role="button"
+      data-slide="prev">
+        <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon"
+        aria-hidden="true"></span>
+
+    </a>
     </div>
 
+  
+
     <br>
-    <!-- Change this back to flex  -->
+    
     <div class="row bottomRow">
       <h6>Trusted by brands all over the world</h3>
 
       <div class="d-flex justify-content-start justify-content-lg-between align-items-center buttonBox">
-        <button class="col-lg-2    justify-content-center brandButton"><img src="../images/spotify-box.svg"/></button>
+        <button class="col-lg-2    justify-content-center brandButton"><img class="brandButtonImg" src="../images/spotify.svg"/></button>
         <button class="col-lg-2    justify-content-center brandButton"><img src="../images/we-box.svg"/></button>
-        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/slack-box.svg"/></button>
-        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/miro-box.svg"/></button>
-        <button class="col-lg-2   justify-content-center brandButton"><img src="../images/dropbox-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img  src="../images/slack-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img class="brandButtonImg" src="../images/miro-box.svg"/></button>
+        <button class="col-lg-2   justify-content-center brandButton"><img  src="../images/dropbox-box.svg"/></button>
       </div>
 
     </div>

@@ -1,0 +1,187 @@
+body {
+  background-color: #0e0d12;
+  color: #fefefe;
+  font-family: Sen;
+}
+
+#container {
+  padding: 0px;
+}
+
+.row {
+  margin: 0px;
+}
+
+#header {
+  position: relative;
+  padding-top: 30px;
+  max-width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  font-size: 25px;
+}
+
+#headerLeft {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3vw;
+}
+
+#headerRight {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+
+#headerRight button {
+  margin-left: 2vw;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+}
+
+#title p {
+  text-align: center;
+  margin: 0px;
+}
+
+/*Banner Section*/
+
+#banner {
+  display: flex;
+  padding-top: 100px;
+  min-height: 90vh;
+  height: auto;
+  margin-bottom: 80px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    352deg,
+    rgba(48, 22, 195, 1) 10%,
+    rgba(246, 184, 47, 1) 29%,
+    rgba(49, 26, 180, 1) 45%,
+    rgba(0, 0, 0, 1) 68%
+  );
+}
+
+#bannerTextSection {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin-bottom: 50px;
+}
+
+#bannerP1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#bannerText h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+#bannerP2 {
+  font-size: 20px;
+}
+
+#bannerImgSection {
+  object-fit: contain;
+  padding-right: 3vw;
+}
+
+#bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#bannerBackground {
+  width: 100%;
+}
+
+/*Trusted Brands Section*/
+
+#trustedBrandsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: center;
+}
+
+#trustedBrandsSection h1 {
+  font-weight: 700;
+}
+
+#brandLogosContainer {
+  width: 100%;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 992px) {
+  #banner {
+    padding-top: 0px;
+    background: none;
+    position: relative;
+  }
+
+  #bannerBackground {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      352deg,
+      rgba(48, 22, 195, 1) 10%,
+      rgba(246, 184, 47, 1) 29%,
+      rgba(49, 26, 180, 1) 45%,
+      rgba(0, 0, 0, 1) 68%
+    );
+    width: 100%;
+    height: 300px;
+  }
+
+  #bannerTextSection {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    margin-bottom: 100px;
+  }
+
+  #bannerImgSection {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    margin-bottom: 100px;
+  }
+
+  #bannerBackground {
+    height: 75vw;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #bannerTextSection {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #bannerImgSection {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #bannerBackground {
+    height: 120vw;
+  }
+}
