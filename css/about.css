@@ -87,6 +87,26 @@ h1 {
   width: 28px;
 }
 
+.date-badge {
+  width: 45px;
+  height: 60px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 4px solid rgb(33,63,255);
+  background-color: white;
+  color: black;
+}
+
+#date-badge-day {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#date-badge-month {
+  font-size: smaller;
+  font-weight: 200;
+}
+
 .line {
   height: .5px;
   background-color: gray;
