@@ -92,3 +92,14 @@ span.badge, .accordion-button {
 }
 
 /* how to give ENTIRE accordion content a border radius? */
+
+.image-container {
+  
+   overflow: hidden;
+   margin: 0;
+}
+
+.image {
+   width: 120%;
+   object-fit: cover;
+}
