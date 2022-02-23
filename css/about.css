@@ -1,6 +1,9 @@
 body {
   font-family: 'Sen', sans-serif;
-  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 .img {
@@ -10,10 +13,95 @@ body {
   object-position: top;
 }
 
-button {
+.btn {
   width: 150px;
 }
 
+.btn-margin {
+  margin-top: 35px;
+  margin-bottom: 125px;
+}
+
+.btn-margin-more {
+  margin-top: 90px;
+}
+
+.card-text-sm {
+  font-size: 18px;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.subscribe-now {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 45px;
+}
+
+.form-control::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+/* ///// COLORS ///// */
+
+.lead {
+  color: #495DDA;
+}
+
 .dark-background {
-  background-color: rgb(31,30,35);
+  background-color: rgb(22,21,26);
+}
+
+.blue-background {
+  background-color: rgb(33,63,255);
+  border: none;
+}
+
+/* ///// SHAPES ///// */
+
+.name-bubble {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.name-bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgb(22,21,26);
+  border-bottom: 13px solid transparent;
+}
+
+.arrow {
+  width: 28px;
+}
+
+.line {
+  height: .5px;
+  background-color: gray;
+}
+
+.rounded-card {
+  border-radius: 10px;
+}
+
+.rounded-border {
+  border-radius: 25px;
+}
+
+.blue-shape {
+  margin: -24px 0 0 -24px;
+  width: 100px;
+  border-top-left-radius: 25px;
 }
