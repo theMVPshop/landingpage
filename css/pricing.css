@@ -119,25 +119,35 @@ span.badge, .accordion-button {
 
 .btn:active {
    background: linear-gradient(111deg, #2143fe, #1739c3, #9ec2f5);
-   background-size: 600% 600%;
+   background-size: 400% 400%;
 
-   -webkit-animation: AnimationName 0.2s forwards infinite;
-   -moz-animation: AnimationName 0.2s forwards infinite;
-   animation: AnimationName 0.2s forwards infinite;
+   -webkit-animation: AnimationName 0.3s forwards infinite;
+   -moz-animation: AnimationName 0.3s forwards infinite;
+   animation: AnimationName 0.3s forwards infinite;
 }
 
 @-webkit-keyframes AnimationName {
-   0%{background-position:0% 78%}
+   0%{background-position:0% 40%}
    50%{background-position:100% 23%}
    100%{background-position:0% 78%}
 }
 @-moz-keyframes AnimationName {
-   0%{background-position:0% 78%}
+   0%{background-position:0% 40%}
    50%{background-position:100% 23%}
    100%{background-position:0% 78%}
 }
 @keyframes AnimationName {
-   0%{background-position:0% 78%}
+   0%{background-position:0% 40%}
    50%{background-position:100% 23%}
    100%{background-position:0% 78%}
+}
+
+.btn {
+   transition: 0.3s ease all;
+}
+.try-free:hover {
+   background-color: var(--black) !important;
+}
+.buy-now:hover {
+   background-color: var(--blue-secondary) !important;
 }
