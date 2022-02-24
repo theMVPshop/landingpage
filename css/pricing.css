@@ -59,6 +59,8 @@ body {
  ul,li {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
  }
  li img {
     margin-right: 1rem;
@@ -91,16 +93,24 @@ span.badge, .accordion-button {
    padding-left: 2rem;
 }
 
-/* how to give ENTIRE accordion content a border radius? */
+/* give accordion border radius */
+
+.accordion-flush .accordion-item .accordion-button {
+   border-radius: 1rem 1rem 0 0;
+}
+.accordion-flush .accordion-item .accordion-body {
+   border-radius: 0 0 1rem 1rem;
+}
 
 .image-container {
   height: 35rem;
-   overflow: hidden;
+  overflow: hidden;
+  width: 25rem;
 }
 
+
 .image {
-   width: 150%;
-   object-fit: cover;
-   /* why is this not working? */
-   object-position: top;
-}
+   width: 100%;
+   object-fit: none;
+   object-position: 180% 120%;
+} 
