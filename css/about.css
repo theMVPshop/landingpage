@@ -6,13 +6,6 @@ h1 {
   font-size: 50px;
 }
 
-.img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  object-position: top;
-}
-
 .btn {
   width: 150px;
 }
@@ -24,10 +17,6 @@ h1 {
 
 .btn-margin-more {
   margin-top: 90px;
-}
-
-.card-text-sm {
-  font-size: 18px;
 }
 
 .bold-font {
@@ -87,33 +76,9 @@ h1 {
   width: 28px;
 }
 
-.date-badge {
-  width: 45px;
-  height: 60px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top: 4px solid rgb(33,63,255);
-  background-color: white;
-  color: black;
-}
-
-#date-badge-day {
-  font-size: larger;
-  font-weight: bolder;
-}
-
-#date-badge-month {
-  font-size: smaller;
-  font-weight: 200;
-}
-
 .line {
   height: .5px;
   background-color: gray;
-}
-
-.rounded-card {
-  border-radius: 10px;
 }
 
 .rounded-border {
@@ -124,4 +89,72 @@ h1 {
   margin: -24px 0 0 -24px;
   width: 100px;
   border-top-left-radius: 25px;
+}
+
+/* ///// BLOG CARDS ///// */
+
+.card-text-sm {
+  font-size: 18px;
+}
+
+.rounded-card {
+  border-radius: 10px;
+}
+
+.date-badge {
+  width: 46px;
+  height: 63px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 4px solid rgb(33,63,255);
+  background-color: white;
+  color: black;
+  left: 6%;
+  top: 46%;
+}
+
+#date-badge-day {
+  margin-top: -8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#date-badge-month {
+  margin-top: -3px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+#blog-one-card {
+  height: 38rem;
+}
+
+#blog-one-img {
+  height: 60%;
+  object-fit: cover;
+}
+
+#blog-one-card h2 {
+  font-size: 35px;
+}
+
+#blog-one-card p {
+  font-size: 17px;
+}
+
+@media (min-width: 320px) {
+  .img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (min-width: 768px) {
+  .img {
+    width: 100%;
+    height: 420px;
+    object-position: 50% 6%;
+  }
 }
