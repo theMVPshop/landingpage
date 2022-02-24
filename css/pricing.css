@@ -2,6 +2,7 @@
    --black: #0f0d12; 
    --blue-primary: royalblue;
    --blue-secondary: mediumblue;
+   --blue-third: lightskyblue;
    --dark-grey: #27262b;
    --badge-color: lavender;
    --white: #fdfdfd;
@@ -34,6 +35,9 @@ body {
 .text-blue {
    color: var(--blue-primary);
 }
+.text-blue-third {
+   color: var(--blue-third);
+}
 .width-100 {
    width: 100%;
 }
@@ -55,11 +59,95 @@ body {
  ul,li {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
  }
  li img {
     margin-right: 1rem;
  }
+
+ /* make accordion header blue and text white when open */
  .accordion-button:not(.collapsed) {
    background-color: var(--blue-secondary);
    color: var(--white);
+}
+/* remove accordion button outline */
+.accordion-button:focus {
+   box-shadow: none;
+   border-color: rgba(0,0,0,.125);
+}
+
+span.badge, .accordion-button {
+   transition: 0.5s forwards all;
+}
+/* make badge number white and background blue when accordion open */
+.accordion-button:not(.collapsed) span.badge {
+  background-color: var(--blue-primary);
+  color: var(--white) !important;
+}
+
+.margin-left-lg {
+   margin-left: 4.5rem;
+}
+.accordion-padding {
+   padding-left: 2rem;
+}
+
+/* give accordion border radius */
+
+.accordion-flush .accordion-item .accordion-button {
+   border-radius: 1rem 1rem 0 0;
+}
+.accordion-flush .accordion-item .accordion-body {
+   border-radius: 0 0 1rem 1rem;
+}
+
+.image-container {
+  height: 35rem;
+  overflow: hidden;
+  width: 25rem;
+}
+
+
+.image {
+   width: 100%;
+   object-fit: none;
+   object-position: 180% 120%;
+} 
+
+/* Gradient Animation Playground*/
+
+.btn:active {
+   background: linear-gradient(111deg, #2143fe, #1739c3, #9ec2f5);
+   background-size: 400% 400%;
+
+   -webkit-animation: AnimationName 0.3s forwards infinite;
+   -moz-animation: AnimationName 0.3s forwards infinite;
+   animation: AnimationName 0.3s forwards infinite;
+}
+
+@-webkit-keyframes AnimationName {
+   0%{background-position:0% 40%}
+   50%{background-position:100% 23%}
+   100%{background-position:0% 78%}
+}
+@-moz-keyframes AnimationName {
+   0%{background-position:0% 40%}
+   50%{background-position:100% 23%}
+   100%{background-position:0% 78%}
+}
+@keyframes AnimationName {
+   0%{background-position:0% 40%}
+   50%{background-position:100% 23%}
+   100%{background-position:0% 78%}
+}
+
+.btn {
+   transition: 0.3s ease all;
+}
+.try-free:hover {
+   background-color: var(--black) !important;
+}
+.buy-now:hover {
+   background-color: var(--blue-secondary) !important;
 }

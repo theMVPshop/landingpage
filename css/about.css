@@ -3,35 +3,20 @@ body {
 }
 
 h1 {
-  font-size: 53px;
-}
-
-.img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  object-position: top;
+  font-size: 50px;
 }
 
 .btn {
   width: 150px;
 }
 
-.card-text-sm {
-  font-size: 18px;
+.btn-margin {
+  margin-top: 35px;
+  margin-bottom: 125px;
 }
 
-.lead {
-  color: #495DDA;
-}
-
-.dark-background {
-  background-color: rgb(31,30,35);
-}
-
-.blue-background {
-  background-color: rgb(33,63,255);
-  border: none;
+.btn-margin-more {
+  margin-top: 90px;
 }
 
 .bold-font {
@@ -39,6 +24,8 @@ h1 {
 }
 
 .subscribe-now {
+  padding-top: 10px;
+  padding-bottom: 30px;
   font-size: 45px;
 }
 
@@ -47,7 +34,127 @@ h1 {
   opacity: 1;
 }
 
+/* ///// COLORS ///// */
+
+.lead {
+  color: #495DDA;
+}
+
+.dark-background {
+  background-color: rgb(22,21,26);
+}
+
+.blue-background {
+  background-color: rgb(33,63,255);
+  border: none;
+}
+
+/* ///// SHAPES ///// */
+
+.name-bubble {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.name-bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgb(22,21,26);
+  border-bottom: 13px solid transparent;
+}
+
+.arrow {
+  width: 28px;
+}
+
 .line {
   height: .5px;
   background-color: gray;
+}
+
+.rounded-border {
+  border-radius: 25px;
+}
+
+.blue-shape {
+  margin: -24px 0 0 -24px;
+  width: 100px;
+  border-top-left-radius: 25px;
+}
+
+/* ///// BLOG CARDS ///// */
+
+.card-text-sm {
+  font-size: 18px;
+}
+
+.rounded-card {
+  border-radius: 10px;
+}
+
+.date-badge {
+  width: 46px;
+  height: 63px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 4px solid rgb(33,63,255);
+  background-color: white;
+  color: black;
+  left: 6%;
+  top: 46%;
+}
+
+#date-badge-day {
+  margin-top: -8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#date-badge-month {
+  margin-top: -3px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+#blog-one-card {
+  height: 38rem;
+}
+
+#blog-one-img {
+  height: 60%;
+  object-fit: cover;
+}
+
+#blog-one-card h2 {
+  font-size: 35px;
+}
+
+#blog-one-card p {
+  font-size: 17px;
+}
+
+@media (min-width: 320px) {
+  .img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+@media (min-width: 768px) {
+  .img {
+    width: 100%;
+    height: 420px;
+    object-position: 50% 6%;
+  }
 }

@@ -14,28 +14,43 @@ body {
 
 #header {
   position: relative;
-  padding-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 30px;
   max-width: 100%;
   height: 100px;
-  margin-bottom: 50px;
 }
 
 #title {
   width: 100%;
   position: absolute;
   font-size: 25px;
+  font-weight: 700;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #headerLeft {
   display: flex;
   justify-content: flex-start;
   padding-left: 3vw;
+  align-items: center;
 }
 
 #headerRight {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 3vw;
+}
+
+#headerRight a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  height: 30px;
 }
 
 #headerRight button {
@@ -52,6 +67,17 @@ body {
   margin: 0px;
 }
 
+#signUpButton {
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: #0e0d12;
+  width: 170px;
+  height: 60px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 /*Banner Section*/
 
 #banner {
@@ -59,7 +85,7 @@ body {
   padding-top: 100px;
   min-height: 90vh;
   height: auto;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     352deg,
@@ -106,6 +132,17 @@ body {
   width: 100%;
 }
 
+#getStartedButton {
+  width: 220px;
+  height: 70px;
+  border: 0px;
+  background-color: #213fff;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
 /*Trusted Brands Section*/
 
 #trustedBrandsSection {
@@ -115,14 +152,111 @@ body {
   padding-left: 3vw;
   padding-right: 3vw;
   text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 #trustedBrandsSection h1 {
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 #brandLogosContainer {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-content: space-between;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.brandLogo {
+  background-color: #1f1e23;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Icons Section*/
+
+#iconsSection {
+  background-color: #ffffff;
+  color: black;
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 25px;
+  column-gap: 50px;
+  grid-auto-rows: minmax(300px, auto);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.iconImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  margin-bottom: 70px;
+}
+
+.icon h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.icon p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*Footer Section*/
+
+#footerSectionSmall {
+  display: none;
+}
+
+#footerSectionWide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1839c4;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: center;
+}
+
+#footerSectionWide p {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footerSectionWide h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+#footerSectionWide button {
+  border-radius: 50px;
+  border: 0px;
+  background-color: #213fff;
+  width: 220px;
+  height: 70px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /*Media Queries*/
@@ -168,9 +302,24 @@ body {
     object-fit: cover;
     bottom: 0;
   }
+
+  #trustedBrandsSection {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+
+  #iconsSection {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+
+  #footerSection {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #bannerTextSection {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -183,5 +332,57 @@ body {
 
   #bannerBackground {
     height: 120vw;
+  }
+
+  #brandLogosContainer {
+    grid-auto-rows: minmax(150px, auto);
+  }
+
+  #trustedBrandsSection {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #iconsSection {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    column-gap: 25px;
+  }
+
+  #footerSectionWide {
+    display: none;
+  }
+
+  #footerSectionSmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1839c4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: center;
+  }
+
+  #footerSectionSmall p {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  #footerSectionSmall h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  #footerSectionSmall button {
+    border-radius: 50px;
+    border: 0px;
+    background-color: #213fff;
+    width: 230px;
+    height: 70px;
+    color: white;
+    font-weight: 700;
   }
 }
