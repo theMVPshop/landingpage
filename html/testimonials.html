@@ -16,19 +16,20 @@
   <!-- arrows and "Testimonials" -->
   <div class="container main d-flex flex-column align-items-center justify-content-space-between">
     <div class="row justify-content-center topRow">
+      <!-- These two columns are keeping the carousel controls in place on mobile -->
       <div class="col-6 arrowButtons">
-        <button>left arrow button</button>
       </div>
       <div class="col-6 arrowButtons">
-        <button>right arrow button</button>
+        <!-- <button>right arrow button</button> -->
       </div>
       <h6>Testimonials</h6>
     </div>
 
     <br>
     <!-- this div is from the carousel tutorial; the outer container -->
+    <!-- change data ride to carousel to turn on automatic slide -->
     <div id='myCarousel' class="carousel slide row middleRow" 
-    data-ride="carousel">
+    data-ride="false">
 
       <!-- indicators, bottom of carousel; likely remove -->
       <!-- <ul class="carousel-indicators">
@@ -46,21 +47,20 @@
               <h1 class="quoteText">Zospace has helped us work</h1>
               <img src="../images/quotes.svg" class="quoteImg"/>
             </div>
-            <p class="paragraph">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
-            <p class="paragraph text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly pariatur, turkey occaecat pork landjaeger consequat biltong sint et pork loin. </p>
+            <p class="paragraph firstP">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet</p>
+            <p class="paragraph secondP text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly </p>
+            <div class="line"></div>
+            <div class="line2"></div>
             <div class="row clientStarsContainer">
-              <div class="col-6 border">
+              <div class="col-6">
                 <div class="portraitFrame">
                   <img class="portraitImage" src="../images/pexels-photo-5325840.jpeg"/>
                 </div>
               </div>
               <div class="col-6 d-flex justify-content-center align-items-center">
-                <div class="d-flex flex-column border">
+                <div class="d-flex flex-column starNameBox">
                   <div><img src="../images/rating.svg"/></div>
-                  <!-- This needs to be pulled in from a database -->
                   <h5>Léa Herrera</h5>
-                  <!-- this also needs to be pulled in from a database, unless all are from Google
-                  also, needs Google font;  -->
                   <h6>Google</h6>
                 </div>
               </div>
@@ -130,5 +130,10 @@
 
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

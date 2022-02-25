@@ -3,63 +3,108 @@ body{
   font-family: Sen;
 }
 .main{
-  background-color: sandybrown; 
-  border-top: 1px solid royalblue;
-  height: 100vh;
-  /* put this inline? space-between */
   justify-content: space-between;
+  margin-top: 80px;
+  width: 350px;
+}
 
-}
 .topRow{
-  border: 1px solid darkcyan;
+  width: 100%;
 }
+
 .arrowButtons {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
+  margin-top: 80px;
+}
+
+.carousel-control-prev {
+  width: 80%;
+  position: absolute;
+  bottom: 80%;
+  right: 50%;
+  transform: translate(112px, -170px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  } 
+
+  .carousel-control-prev-icon {
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/lArrow.svg");
+  }
+
+.carousel-control-next {
+  width: 80%;
+  position: absolute;
+  bottom: 80%;
+  right: 50%; 
+  transform: translate(260px, -170px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-control-next-icon {
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/rArrow.svg");
+}
+
+h6{
+  font-weight: bold;
 }
 
 .middleRow{
-  border: 3px solid purple;
-  /* width: 350px; */
+  width: 100%;
 }
 
 .quoteText{
-  border: 1px solid magenta;
-  /* position: absolute; */
   z-index: 1; 
   text-align:center;
   object-position: right center;
   object-fit: scale-down;
   font-weight: bold;
-  margin-top: 15px;
-  
+  margin-top: 60px;
+  margin-bottom:50px;
+  line-height: 97%;
 }
 
 .quoteImg {
-  border: 1px solid palevioletred;
   position: absolute;
-  /* this is close, but I think I want relative size? */
-  margin: -355px -236px -250px -250px;
-  /*height: 1000px;
-  width: 1000px; */
-  /* margin: -1rem; */
-  height: 60rem;
-  width: 60rem;
-  /* position: relative; */
+  margin: -310px -200px -250px -250px;
+  height: 64rem;
+  width: 64rem;
 }
 
 .paragraph {
-  margin: 5px 25px;
+  margin: 0 5px 20px 5px;
   text-align: center;
 }
 
+.line{
+  width: 300px;
+  position: relative;
+  right: 200px;
+  top: 92px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.line2{
+  width: 100vw;
+  position: relative;
+  left: 308px;
+  top: 92px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
 .clientStarsContainer{
+  margin-top: 30px;
   width: 300px;
 }
 
 .portraitFrame {
-  border: 1px solid blue;
   width: 125px;
   height: 125px;
   border-radius: 50%;
@@ -70,14 +115,22 @@ body{
   width: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 50%
+  border-radius: 50%;
+}
+
+h5{
+  font-weight: bold;
+}
+
+.starNameBox{
+  padding-top: 8px;
 }
 
 .bottomRow{
-  border: 1px solid peru;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:125px;
 }
 /* .buttonBoxContainer{
   display: flex;
@@ -89,14 +142,14 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px;
+  width: 350px;
 }
 
 .brandButton{
   height: 100%;
-  width: 300px;
+  width: 350px;
   height: 90px;
-  margin: 10px;
+  margin: 12px;
   padding: 1.4rem;
   background: white;
   border: none;
@@ -116,6 +169,15 @@ body{
 @media screen and (min-width: 768px){
   .buttonBox{
     width:650px
+  }
+
+  .topRow{
+    border: 1px solid darkcyan;
+  }
+
+  .middleRow{
+    border: 3px solid purple;
+    /* width: 350px; */
   }
 }
 
