@@ -17,6 +17,9 @@ body {
 .bg-grey {
    background-color: var(--dark-grey);
 }
+.bg-white {
+   background-color: var(--white);
+}
 .bg-blue-primary {
    background-color: var(--blue-primary);
 }
@@ -150,4 +153,13 @@ span.badge, .accordion-button {
 }
 .buy-now:hover {
    background-color: var(--blue-secondary) !important;
+}
+
+/*Navbar*/
+
+.nav-list a {
+   color: darkslategray !important;
+}
+.nav-open {
+   background-color: #fdfdfd;
 }
