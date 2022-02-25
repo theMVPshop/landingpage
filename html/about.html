@@ -15,9 +15,24 @@
     <h1 class="text-center bold-font my-5 p-4">Our Team</h1>
 
     <!-- team images and titles -->
-    <section>
-      <div class="container">
+    <section class="container">
+      <div class="row gx-5 mx-lg-5">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+        <!-- team member one image -->
         <img src="../images/pexels-photo-5325840.jpeg" class="img img-fluid" alt="smiling woman">
+
+        <!-- learn more bubble -->
+        <div class="learn-more-bubble my-4 p-5 d-none d-lg-block d-flex flex-column justify-content-center blue-background">
+          <h2 class="bold-font">Join us if you want!</h2>
+          <h5 class="bold-font">Learn how!</h5>
+          <div class="d-flex justify-content-end">
+            <img src="../images/dArrow.svg" class="arrow" alt="diagonal arrow">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <!-- team member one name -->
         <div class="name-bubble my-4 p-5 dark-background d-flex flex-column">
           <h2 class="bold-font">Léa Herrera</h2>
           <h5 class="bold-font">UX Designer</h5>
@@ -26,7 +41,12 @@
           </div>
         </div>
 
+        <!-- team member two image -->
         <img src="../images/pexels-photo-5325885.jpeg" class="img img-fluid" alt="headshot of man">
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <!-- team member two name -->
         <div class="name-bubble my-4 p-5 dark-background d-flex flex-column justify-content-center">
           <h2 class="bold-font">Maxi Svennson</h2>
           <h5 class="bold-font">Social Media Manager</h5>
@@ -34,7 +54,10 @@
             <img src="../images/hArrow.svg" class="arrow" alt="right arrow">
           </div>
         </div>
-  
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <!-- team member three image and name -->
         <img src="../images/photo-1615803795804-06a0c2a0030e.jpeg" class="img img-fluid" alt="man looking out window">
         <div class="name-bubble my-4 p-5 dark-background d-flex flex-column justify-content-center">
           <h2 class="bold-font">Oliver Haller</h2>
@@ -43,10 +66,11 @@
             <img src="../images/hArrow.svg" class="arrow" alt="right arrow">
           </div>
         </div>
+      </div>
 
-        <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-light rounded-pill p-3 bold-font card-text-sm btn-margin btn-margin-more">More</button>
-        </div>
+      <!-- more button -->
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-light rounded-pill p-3 bold-font card-text-sm btn-margin btn-margin-more">More</button>
       </div>
     </section>
 
@@ -84,58 +108,72 @@
 
       <!-- blog cards -->
       <div class="container mt-5">
-        <div id="blog-one-card" class="card my-4 rounded-card dark-background position-relative">
-          <img src="../images/pexels-photo-6822288.jpeg" id="blog-one-img" class="card-img-top  rounded-card" alt="man sketching in notebook">
-          <div class="date-badge d-flex flex-column justify-content-center align-items-center position-absolute">
-            <span id="date-badge-day">1</span>
-            <span id="date-badge-month">FEB</span>
-          </div>
-          <div class="card-body d-flex flex-column justify-content-evenly">
-            <h2 class="card-text bold-font">Is remote work working?</h2>
-            <div class="line my-3"></div>
-            <p class="text-muted">This morning, platea dictumst nec nunc in hac habitasse dignissim accumsan.
-              <img src="../images/hArrow.svg" class="arrow mx-2" alt="right arrow">
-            </p>
-          </div>
-        </div>
-      
-        <div class="card my-4 rounded-card dark-background">
-          <img src="../images/pexels-photo-5325768.jpeg" class="card-img-top rounded-card" alt="group of people looking towards camera">
-          <div class="card-body">
-            <div class="line my-3"></div>
-            <p class="card-text-sm">10 ways to keep your remote teams engaged</p>
-          </div>
-        </div>
-      
-        <div class="card my-4 rounded-card dark-background">
-          <img src="../images/pexels-photo-5325708.jpeg" class="card-img-top rounded-card" alt="people smiling and making peace signs">
-          <div class="card-body">
-            <div class="line my-3"></div>
-            <p class="card-text-sm">How to make a concept map (+Examples)</p>
-          </div>
-        </div>
 
-        <div class="d-flex justify-content-center my-4">
-          <button type="button" class="btn btn-primary rounded-pill p-3 blue-background bold-font card-text-sm btn-margin">See all</button>
+        <!-- blog one -->
+        <div class="row gx-5">
+          <div class="col-sm-12 col-lg-8">
+            <div id="blog-one-card" class="card my-4 rounded-card dark-background position-relative">
+              <img src="../images/pexels-photo-6822288.jpeg" id="blog-one-img" class="card-img-top  rounded-card" alt="man sketching in notebook">
+              <div class="date-badge d-flex flex-column justify-content-center align-items-center position-absolute">
+                <span id="date-badge-day">1</span>
+                <span id="date-badge-month">FEB</span>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <h2 class="card-text bold-font">Is remote work working?</h2>
+                <div class="line my-3"></div>
+                <p class="text-muted">This morning, platea dictumst nec nunc in hac habitasse dignissim accumsan.
+                  <img src="../images/hArrow.svg" class="arrow mx-2" alt="right arrow">
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <!-- blog two -->
+            <div class="card my-4 rounded-card dark-background">
+                <img src="../images/pexels-photo-5325768.jpeg" class="card-img-top rounded-card" alt="group of people looking towards camera">
+                <div class="card-body">
+                  <div class="line my-3"></div>
+                  <p class="card-text-sm">10 ways to keep your remote teams engaged</p>
+                </div>
+              </div>
+  
+              <!-- blog three -->
+              <div class="card my-4 rounded-card dark-background">
+                <img src="../images/pexels-photo-5325708.jpeg" class="card-img-top rounded-card" alt="people smiling and making peace signs">
+                <div class="card-body">
+                  <div class="line my-3"></div>
+                  <p class="card-text-sm">How to make a concept map (+Examples)</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      <!-- see all button -->
+      <div class="d-flex justify-content-center my-4">
+        <button type="button" class="btn btn-primary rounded-pill p-3 blue-background bold-font card-text-sm btn-margin">See all</button>
       </div>
     </section>
     
     <!-- subscribe form section -->
     <section class="container mt-4 mb-5 pb-4">
-      <div class="container text-white p-4 rounded-border dark-background">
-        <img src="../images/blueShape.svg" class="blue-shape" alt="blue shape">
-        <p class="my-2">More news</p>
-        <h1 class="bold-font subscribe-now">Subscribe now</h1>
-        <form>
-          <div class="mb-3">
-            <input type="email" class="form-control rounded-pill p-3 bold-font card-text-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Drop your Email">
-          </div>
-          <button type="submit" class="btn btn-primary rounded-pill p-3 w-100 blue-background bold-font card-text-sm">Subscribe</button>
-        </form>
-        <p class="my-4 pb-4"><span class="text-secondary">The brown fox jumps over</span> the lazy dog.</p>
-      </div>
-    </section>
+      <div class="container text-white p-sm-4 p-md-2 rounded-border dark-background">
+        <!-- <img src="../images/blueShape.svg" class="blue-shape" alt="blue shape"> -->
+      <section class="container mt-4 mb-5 pb-4">
+          <p class="my-2">More news</p>
+          <h1 class="bold-font subscribe-now">Subscribe now</h1>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control rounded-pill p-3 bold-font card-text-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Drop your Email">
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill p-3 w-100 blue-background bold-font card-text-sm">Subscribe</button>
+          </form>
+          <p class="my-4 pb-4"><span class="text-secondary">The brown fox jumps over</span> the lazy dog.</p>
+          <img src="../images/stars.svg" class="d-none d-lg-block" alt="stars">
+        </div>
+      </section>
+    </section>  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
