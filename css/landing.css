@@ -51,10 +51,12 @@ body {
   font-size: 18px;
   border-bottom: 1px solid white;
   height: 30px;
+  text-decoration: none;
 }
 
 #headerRight button {
   margin-left: 2vw;
+  cursor: pointer;
 }
 
 .navItem {
@@ -104,7 +106,15 @@ body {
 
 #bannerP1 {
   font-size: 30px;
-  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: rgb(232, 131, 59);
+  background-image: linear-gradient(
+    318deg,
+    rgba(232, 131, 59, 1) 24%,
+    rgba(228, 221, 155, 1) 100%
+  );
 }
 
 #bannerText h1 {
@@ -115,6 +125,7 @@ body {
 
 #bannerP2 {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 #bannerImgSection {
@@ -169,7 +180,7 @@ body {
   column-gap: 25px;
   row-gap: 25px;
   justify-content: space-between;
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: 150px;
 }
 
 .brandLogo {
@@ -178,6 +189,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #ffffff;
+}
+
+.brandLogo img {
+  width: 100px;
+  height: 100px;
 }
 
 /*Icons Section*/
@@ -262,24 +279,13 @@ body {
 /*Media Queries*/
 
 @media only screen and (max-width: 992px) {
+  #headerLeft {
+    padding-left: 5vw;
+  }
   #banner {
     padding-top: 0px;
     background: none;
     position: relative;
-  }
-
-  #bannerBackground {
-    position: absolute;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      352deg,
-      rgba(48, 22, 195, 1) 10%,
-      rgba(246, 184, 47, 1) 29%,
-      rgba(49, 26, 180, 1) 45%,
-      rgba(0, 0, 0, 1) 68%
-    );
-    width: 100%;
-    height: 300px;
   }
 
   #bannerTextSection {
@@ -295,12 +301,19 @@ body {
   }
 
   #bannerBackground {
-    height: 75vw;
+    height: 70vw;
     width: 100%;
     position: absolute;
     z-index: -1;
     object-fit: cover;
     bottom: 0;
+    background: linear-gradient(
+      352deg,
+      rgba(48, 22, 195, 1) 10%,
+      rgba(246, 184, 47, 1) 29%,
+      rgba(49, 26, 180, 1) 45%,
+      rgba(0, 0, 0, 1) 68%
+    );
   }
 
   #trustedBrandsSection {
@@ -331,11 +344,11 @@ body {
   }
 
   #bannerBackground {
-    height: 120vw;
+    height: 110vw;
   }
 
   #brandLogosContainer {
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: 150px;
   }
 
   #trustedBrandsSection {
