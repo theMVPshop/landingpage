@@ -23,6 +23,8 @@ h1 {
   font-weight: bold;
 }
 
+/* ///// SUBSCRIBE SECTION ///// */
+
 .subscribe-now {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -206,6 +208,12 @@ h1 {
     border-top: 25px solid transparent;
     border-right: 25px solid rgb(22,21,26);
     border-bottom: 25px solid transparent;
+  }
+  #subscribe-input {
+    background-image: url(../images/bullseye.svg);
+    background-repeat: no-repeat;
+    background-position: left 40px center;
+    text-indent: 80px;
   }
 }
 
