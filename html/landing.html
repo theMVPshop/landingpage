@@ -13,6 +13,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../scripts/hamburger.js"></script>
   </head>
   <body>
     <div class="container-fluid" id="container">
@@ -21,7 +23,24 @@
           class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
           id="headerLeft"
         >
-        <img src="../images/hamburger-menu.svg"/>
+        <div id="hamburgerCont">
+          <nav class="navbar navbar-dark bg-black position-absolute">
+              <img class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" src="../images/hamburger-menu.svg" id="hamburger">
+            <div class="navbar-collapse collapse nav-open" id="navbar">
+              <div class="d-flex flex-column align-items-center justify-content-start">
+                <img src="../images/zospace-logo-black.svg" alt="zospace logo">
+                  <ul class="navbar-nav nav-list d-flex flex-column align-items-start justify-content-center gap-2 mb-5">
+                    
+                      <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                  </ul>
+                </div>
+            </div>  
+        </nav>
+
+        </div>
         </div>
         <div id="title">
           <img src="../images/zospace-logo.svg">

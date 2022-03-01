@@ -106,15 +106,15 @@ body {
 
 #bannerP1 {
   font-size: 30px;
-  background-clip: text;
+  font-weight: 600;
+  background: rgb(226, 101, 12);
+  background: linear-gradient(
+    318deg,
+    rgba(226, 101, 12, 1) 56%,
+    rgba(228, 221, 155, 1) 98%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: rgb(232, 131, 59);
-  background-image: linear-gradient(
-    318deg,
-    rgba(232, 131, 59, 1) 24%,
-    rgba(228, 221, 155, 1) 100%
-  );
 }
 
 #bannerText h1 {
@@ -125,7 +125,7 @@ body {
 
 #bannerP2 {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 #bannerImgSection {
@@ -398,4 +398,19 @@ body {
     color: white;
     font-weight: 700;
   }
+}
+
+#navbar {
+  background-color: #ffffff;
+  width: 200px;
+  height: auto;
+  z-index: 10;
+}
+
+#hamburger {
+  margin-bottom: 0px;
+}
+
+.nav-link {
+  color: black !important;
 }
