@@ -1,15 +1,16 @@
 /* https://fonts.google.com/specimen/Sen?preview.text=Get%20perfect%20app%20for%20your%20project&preview.text_type=custom */
 body{
   font-family: Sen;
+  width: 100%;
 }
 .main{
-  justify-content: space-between;
   margin-top: 80px;
-  width: 350px;
+  width: 375px;
 }
 
 .topRow{
   width: 100%;
+  margin-left: 0;
 }
 
 .arrowButtons {
@@ -19,7 +20,7 @@ body{
 }
 
 .carousel-control-prev {
-  width: 80%;
+  width: 50%;
   position: absolute;
   bottom: 80%;
   right: 50%;
@@ -30,14 +31,16 @@ body{
   } 
 
   .carousel-control-prev-icon {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
+  margin-left: 5px;
   background-image: url("../images/lArrow.svg");
   }
 
 .carousel-control-next {
-  width: 80%;
+  width: 20%;
   position: absolute;
+  margin-right: 70px;
   bottom: 80%;
   right: 50%; 
   transform: translate(260px, -170px);
@@ -47,8 +50,9 @@ body{
 }
 
 .carousel-control-next-icon {
-  width: 45px;
-  height: 45px;
+  width: 52px;
+  height: 52px;
+  margin-left: -122px;
   background-image: url("../images/rArrow.svg");
 }
 
@@ -58,13 +62,15 @@ h6{
 
 .middleRow{
   width: 100%;
+  margin-left: 3px;
+}
+.quoteContainer{
+  width: 350px;
 }
 
 .quoteText{
   z-index: 1; 
   text-align:center;
-  object-position: right center;
-  object-fit: scale-down;
   font-weight: bold;
   margin-top: 60px;
   margin-bottom:50px;
@@ -73,9 +79,10 @@ h6{
 
 .quoteImg {
   position: absolute;
-  margin: -310px -200px -250px -250px;
+  margin: -310px -190px -250px -250px;
   height: 64rem;
   width: 64rem;
+
 }
 
 .paragraph {
