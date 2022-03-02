@@ -215,7 +215,6 @@ h1 {
   }
 }
 
-
 @media (min-width: 992px) {
   .img {
     height: 200px;
@@ -236,9 +235,6 @@ h1 {
     margin-top: -78px;
     padding-left: 80px;
   } 
-  .subscribe-now {
-    font-size: 60px;
-  }
   .blue-shape {
     width: 175px;
   }
@@ -250,6 +246,17 @@ h1 {
 @media (min-width: 1024px) {
   .img {
     height: 340px;
+  }
+  .subscribe-section-container {
+    width: 90%;
+  }
+  .subscribe-now {
+    font-size: 50px;
+  }
+  .blog-container {
+    background-image: url(../images/squiggle.svg);
+    background-repeat: no-repeat;
+    background-position: 0 250px;
   }
 }
 
