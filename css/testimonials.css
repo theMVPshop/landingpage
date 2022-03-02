@@ -100,9 +100,9 @@ h6{
 
 .line2{
   width: 100vw;
-  position: relative;
+  /* position: relative; */
   left: 308px;
-  top: 92px;
+  /* top: 92px; */
   border: 1px solid rgba(0,0,0,.125);
 }
 
