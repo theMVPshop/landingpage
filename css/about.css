@@ -28,7 +28,7 @@ h1 {
 .subscribe-now {
   padding-top: 10px;
   padding-bottom: 30px;
-  font-size: 45px;
+  font-size: 48px;
 }
 
 .form-control::placeholder {
@@ -87,8 +87,9 @@ h1 {
 }
 
 .blue-shape {
+  margin: 0 0 0 -11px;
   border-top-left-radius: 25px;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 #stars {
@@ -176,8 +177,7 @@ h1 {
     border-bottom: 25px solid rgb(22,21,26);
   }
   .blue-shape {
-    margin: -24px 0 0 -24px;
-    width: 100px;
+    width: 80px;
   }
   #subscribe-btn {
     width: 100%;
@@ -196,10 +196,25 @@ h1 {
     object-position: 50% 6%;
   }
   .blue-shape {
-    margin: -23px 0 0 -24px;
-    width: 120px;
+    width: 140px;
+  }
+  .subscribe-section {
+    margin-top: -45px;
+  }
+  #subscribe-input {
+    background-image: url(../images/bullseye.svg);
+    background-repeat: no-repeat;
+    background-position: left 40px center;
+    text-indent: 80px;
+    width: 350px;
+  }
+  #subscribe-btn {
+    margin-left: -55px;
+    width: 150px;
+    height: 61px;
   }
 }
+
 
 @media (min-width: 992px) {
   .img {
@@ -217,22 +232,29 @@ h1 {
     border-right: 25px solid rgb(22,21,26);
     border-bottom: 25px solid transparent;
   }
-  #subscribe-input {
-    background-image: url(../images/bullseye.svg);
-    background-repeat: no-repeat;
-    background-position: left 40px center;
-    text-indent: 80px;
-    width: 350px;
+  .subscribe-section {
+    margin-top: -78px;
+    padding-left: 80px;
+  } 
+  .subscribe-now {
+    font-size: 60px;
   }
-  #subscribe-btn {
-    margin-left: -55px;
-    width: 150px;
-    height: 61px;
+  .blue-shape {
+    width: 175px;
+  }
+  #stars {
+    margin-top: -30px;
   }
 }
 
 @media (min-width: 1024px) {
   .img {
     height: 340px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .subscribe-section-container {
+    width: 75%;
   }
 }
