@@ -3,7 +3,7 @@ body{
   font-family: Sen;
   width: 100%;
 }
-.main{
+.main {
   margin-top: 80px;
   width: 375px;
 }
@@ -17,6 +17,7 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 80px;
+  border: 1px solid red;
 }
 
 .carousel-control-prev {
@@ -92,7 +93,7 @@ h6{
 
 .line{
   width: 300px;
-  position: relative;
+  /* position: relative; */
   right: 200px;
   top: 92px;
   border: 1px solid rgba(0,0,0,.125);
@@ -100,15 +101,15 @@ h6{
 
 .line2{
   width: 100vw;
-  /* position: relative; */
-  left: 308px;
-  /* top: 92px; */
+  position: relative;
+  top: 700px;
   border: 1px solid rgba(0,0,0,.125);
 }
 
 .clientStarsContainer{
   margin-top: 30px;
   width: 300px;
+  background-color: white;
 }
 
 .portraitFrame {
