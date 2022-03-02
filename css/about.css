@@ -91,6 +91,11 @@ h1 {
   /* z-index: -1; */
 }
 
+#stars {
+  height: 150px;
+  padding-right: 0;
+}
+
 /* ///// BLOG CARDS ///// */
 
 .card-text-sm {
@@ -174,6 +179,9 @@ h1 {
     margin: -24px 0 0 -24px;
     width: 100px;
   }
+  #subscribe-btn {
+    width: 100%;
+  }
 }
 
 @media (min-width: 375px) {
@@ -214,6 +222,12 @@ h1 {
     background-repeat: no-repeat;
     background-position: left 40px center;
     text-indent: 80px;
+    width: 350px;
+  }
+  #subscribe-btn {
+    margin-left: -55px;
+    width: 150px;
+    height: 61px;
   }
 }
 
