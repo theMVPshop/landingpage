@@ -38,6 +38,63 @@ body {
   align-items: center;
 }
 
+/*HAMBURGER STYLING STARTS*/
+
+#hamburgerCont {
+  position: relative;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 30px;
+}
+
+#hamburger {
+  border: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.zospaceLogo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  text-align: left;
+}
+
+.nav-list li {
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.nav-list li a {
+  padding: 0px;
+}
+
+#dropDownCont {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*HAMBURGER STYLING ENDS*/
+
 #headerRight {
   display: flex;
   justify-content: flex-end;
@@ -78,6 +135,12 @@ body {
   color: white;
   font-weight: 700;
   font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#signUpButton:hover {
+  background-color: #001dd4;
 }
 
 /*Banner Section*/
@@ -148,10 +211,16 @@ body {
   height: 70px;
   border: 0px;
   background-color: #213fff;
+  transition: 0.3s;
   color: white;
   font-weight: 600;
   font-size: 20px;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+#getStartedButton:hover {
+  background-color: #001dd4;
 }
 
 /*Trusted Brands Section*/
@@ -199,6 +268,10 @@ body {
 
 /*Icons Section*/
 
+#iconsSectionMobile {
+  display: none;
+}
+
 #iconsSection {
   background-color: #ffffff;
   color: black;
@@ -233,7 +306,7 @@ body {
 
 .icon p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /*Footer Section*/
@@ -274,6 +347,12 @@ body {
   color: white;
   font-weight: 700;
   font-size: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#footerSectionWide button:hover {
+  background-color: #001dd4;
 }
 
 /*Media Queries*/
@@ -400,6 +479,48 @@ body {
   }
 }
 
+@media only screen and (max-width: 603px) {
+  #iconsSection {
+    display: none;
+  }
+
+  #iconsSectionMobile {
+    background-color: #ffffff;
+    color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  .iconLeft {
+    margin-right: 20px;
+  }
+
+  .iconRight {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconRight h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .iconRight p {
+    font-size: 18px;
+  }
+}
 #navbar {
   background-color: #ffffff;
   width: 200px;

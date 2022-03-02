@@ -101,8 +101,12 @@ h6{
 
 .line2{
   width: 100vw;
+<<<<<<< HEAD
   position: relative;
   top: 700px;
+=======
+  left: 308px;
+>>>>>>> 8e5b2392b7b015f46db8187824a3feac052117d8
   border: 1px solid rgba(0,0,0,.125);
 }
 
@@ -140,11 +144,6 @@ h5{
   align-items: center;
   margin-top:125px;
 }
-/* .buttonBoxContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .buttonBox{
   display: flex;
@@ -170,30 +169,76 @@ h5{
   object-fit: contain;
 }
 
-.starsBox{
-  background-color: blue;
-}
+@media (min-width: 768px){
+  .main{
+    width: 767px;
+  }
 
-@media screen and (min-width: 768px){
+  .carousel-control-prev {
+    transform: translate(282px, -170px);
+    } 
+
+    .carousel-control-next {
+      transform: translate(325px, -170px);
+    }
+
+  .quoteContainer{
+    width: 765px;
+  }
+
+  .quoteText{
+    margin-right: 115px;
+  }
+
+  .quoteImg {
+    margin: -310px -110px -250px -250px;
+  }
+
+  .paragraph {
+    margin: 0 80px 20px 80px;
+    text-align: center;
+  }
+
   .buttonBox{
-    width:650px
+    width: 650px;
+    /* flex-wrap: wrap; */
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+
   }
 
-  .topRow{
-    border: 1px solid darkcyan;
-  }
-
-  .middleRow{
-    border: 3px solid purple;
-    /* width: 350px; */
-  }
 }
 
 @media screen and (min-width: 992px){
-  .buttonBox{
-    width: 100%;
-    justify-content: space-between;
+
+  .main{
+    background: red;
   }
+
+  .carousel-control-prev {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-62px, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } 
+
+    .carousel-control-next {
+      width: 0%;
+      position: absolute;
+      /* margin-right: 70px; */
+      bottom: 0%;
+      right: 0%; 
+      transform: translate(190px, 0);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
 
   /* this will need to be moved to smaller @media */
   .carousel-item{
@@ -208,6 +253,11 @@ h5{
     bottom:0;
     left: 0;
     right: 0;
+  }
+
+  .buttonBox{
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
