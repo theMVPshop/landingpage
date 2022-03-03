@@ -1,0 +1,21 @@
+/* variables */
+:root {
+    --black: #0f0d12; 
+    --blue-primary: royalblue;
+    --blue-secondary: mediumblue;
+    --blue-third: lightskyblue;
+    --dark-grey: #27262b;
+    --white: #fdfdfd;
+    --light-grey: lightslategray;
+    --badge-color: lavender;
+    --button-hover: #001dd4;
+ }
+
+ /* global styles */
+ .btn {
+    transition: 0.4s all;
+ }
+ .btn:hover {
+    background-color: var(--button-hover) !important;
+ }
+ 
