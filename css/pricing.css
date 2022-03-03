@@ -1,13 +1,5 @@
-:root {
-   --black: #0f0d12; 
-   --blue-primary: royalblue;
-   --blue-secondary: mediumblue;
-   --blue-third: lightskyblue;
-   --dark-grey: #27262b;
-   --badge-color: lavender;
-   --white: #fdfdfd;
-   --light-grey: lightslategray;
-}
+@import url('./styles.css');
+
 body {
    font-family: 'Sen', sans-serif;
 }
@@ -145,15 +137,6 @@ span.badge, .accordion-button {
    100%{background-position:0% 78%}
 }
 
-.btn {
-   transition: 0.3s ease all;
-}
-.try-free:hover {
-   background-color: var(--black) !important;
-}
-.buy-now:hover {
-   background-color: var(--blue-secondary) !important;
-}
 
 /*******Navbar CSS start*******/
 
