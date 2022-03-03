@@ -19,6 +19,8 @@ body{
   margin-top: 80px;
 }
 
+/* If this and .carousel-control-next are set to default 
+the carousel slides correctly, ad doesn't "jump" down*/
 .carousel-control-prev {
   width: 50%;
   position: absolute;
@@ -197,17 +199,14 @@ h5{
     /* flex-wrap: wrap; */
     margin-left: 70px;
     margin-bottom: 50px;
-
-
   }
-
 }
 
 @media screen and (min-width: 992px){
 
-  .main{
+  /* .main{
     background: red;
-  }
+  } */
 
   .carousel-control-prev {
     width: 100%;
@@ -235,7 +234,7 @@ h5{
 
   /* this will need to be moved to smaller @media */
   .carousel-item{
-    background:rgba(0, 0, 0, 0.214);
+    /* background:rgba(0, 0, 0, 0.214); */
     position: relative;
   }
 
