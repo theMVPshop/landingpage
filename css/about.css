@@ -74,7 +74,7 @@ h1 {
 }
 
 .arrow {
-  width: 28px;
+  width: 20px;
 }
 
 .line {
@@ -245,7 +245,19 @@ h1 {
 
 @media (min-width: 1024px) {
   .img {
-    height: 340px;
+    height: 240px;
+  }
+  .img-one {
+    height: 260px;
+  }
+  .team h2 {
+    font-size: 26px;
+  }
+  .team h5 {
+    font-size: 16px;
+  }
+  .name-bubble, .learn-more-bubble {
+    height: 200px;
   }
   .subscribe-section-container {
     width: 90%;
@@ -261,6 +273,12 @@ h1 {
 }
 
 @media (min-width: 1440px) {
+  .img {
+    height: 300px;
+  }
+  .name-bubble, .learn-more-bubble {
+    height: 225px;
+  }
   .subscribe-section-container {
     width: 75%;
   }
