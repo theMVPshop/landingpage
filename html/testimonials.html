@@ -13,8 +13,42 @@
 </head>
 
 <body>
+  <div class="container-fluid" id="container">
+    <div class="row" id="header">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
+        id="headerLeft"
+      >
+      <div id="hamburgerCont">
+        <nav class="navbar" >
+            <img class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" src="../images/hamburger-menu.svg" id="hamburger">
+          <div class="navbar-collapse collapse nav-open" id="navbar">
+            <div class="" id="dropDownCont">
+                <ul class="navbar-nav nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+              </div>
+          </div>  
+      </nav>
+
+      </div>
+      </div>
+      <div id="title">
+        <img src="../images/zospace-logo.svg">
+      </div>
+      <div
+        class="col-lg-6 d-lg-flex d-xl-flex d-none d-sm-none"
+        id="headerRight"
+      >
+        <a href="https://www.google.com">Try for free!</a>
+        <button id="signUpButton">Sign Up</button>
+      </div>
+    </div>
+  <div class="line"></div>
   <!-- arrows and "Testimonials" -->
-  <div class="line2"></div>
   <div class="container-fluid main d-flex flex-column">
     <div class="row justify-content-center topRow">
       <!-- These two columns are keeping the carousel controls in place on mobile -->
@@ -23,14 +57,14 @@
       <div class="col-6 arrowButtons">
         <!-- <button>right arrow button</button> -->
       </div>
-      <h6>Testimonials</h6>
+      <h6 class="testText">Testimonials</h6>
     </div>
 
     <br>
     <!-- this div is from the carousel tutorial; the outer container -->
     <!-- change data ride to carousel to turn on automatic slide -->
     <div id='myCarousel' class="carousel slide row middleRow" 
-    data-ride="false">
+    data-pause="hover" data-ride="false">
 
       <!-- indicators, bottom of carousel; likely remove -->
       <!-- <ul class="carousel-indicators">
@@ -45,7 +79,7 @@
         <div class="carousel-item active">
           <div class="container d-flex flex-column align-items-center carousel-container">
             <div class="d-flex justify-content-end quoteContainer">
-              <h1 class="quoteText">Zospace has helped us work</h1>
+              <h1 class="quoteText" >Zospace has helped us work</h1>
               <img src="../images/quotes.svg" class="quoteImg"/>
             </div>
             <p class="paragraph firstP">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet</p>
@@ -78,7 +112,6 @@
             </div>
             <p class="paragraph firstP">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet</p>
             <p class="paragraph secondP text-muted">Spicy jalapeno bacon ipsum dolor amet excepteur nulla beef ribs tempor tenderloin. Ball tip filet mignon pork belly </p>
-            <div class="line"></div>
             
             <div class="row clientStarsContainer">
               <div class="col-6">

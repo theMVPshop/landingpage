@@ -1,8 +1,20 @@
 /* https://fonts.google.com/specimen/Sen?preview.text=Get%20perfect%20app%20for%20your%20project&preview.text_type=custom */
+
+@import url('./styles.css');
+
 body{
   font-family: Sen;
   width: 100%;
 }
+
+.line{
+  width: 100vw;
+  position: relative;
+  top: 700px;
+  /* left: 308px; */
+  border: 1px solid rgba(0,0,0,.125);
+}
+
 .main {
   margin-top: 80px;
   width: 375px;
@@ -17,20 +29,20 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  border: 1px solid red;
 }
 
-/* If this and .carousel-control-next are set to default 
-the carousel slides correctly, ad doesn't "jump" down*/
+
 .carousel-control-prev {
-  width: 50%;
+  width: 16%;
   position: absolute;
   bottom: 80%;
   right: 50%;
-  transform: translate(112px, -170px);
+  transform: translate(110px, -170px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: unset;
+  
   } 
 
   .carousel-control-prev-icon {
@@ -38,18 +50,25 @@ the carousel slides correctly, ad doesn't "jump" down*/
   height: 52px;
   margin-left: 5px;
   background-image: url("../images/lArrow.svg");
+  /* color: var(--blue-primary); */
+  }
+
+  .carousel-control{
+    filter: none; 
+    opacity: 1;
   }
 
 .carousel-control-next {
-  width: 20%;
+  width: 0;
   position: absolute;
   margin-right: 70px;
   bottom: 80%;
   right: 50%; 
-  transform: translate(260px, -170px);
+  transform: translate(191px, -170px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: unset;
 }
 
 .carousel-control-next-icon {
@@ -57,10 +76,15 @@ the carousel slides correctly, ad doesn't "jump" down*/
   height: 52px;
   margin-left: -122px;
   background-image: url("../images/rArrow.svg");
+  /* filter: none;  */
 }
 
 h6{
   font-weight: bold;
+}
+
+.testText{
+  color: var(--blue-primary);
 }
 
 .middleRow{
@@ -91,25 +115,6 @@ h6{
 .paragraph {
   margin: 0 5px 20px 5px;
   text-align: center;
-}
-
-.line{
-  width: 300px;
-  /* position: relative; */
-  right: 200px;
-  top: 92px;
-  border: 1px solid rgba(0,0,0,.125);
-}
-
-.line2{
-  width: 100vw;
-<<<<<<< HEAD
-  position: relative;
-  top: 700px;
-=======
-  left: 308px;
->>>>>>> 8e5b2392b7b015f46db8187824a3feac052117d8
-  border: 1px solid rgba(0,0,0,.125);
 }
 
 .clientStarsContainer{
@@ -172,16 +177,24 @@ h5{
 }
 
 @media (min-width: 768px){
+  .line{
+    width: 100vw;
+    position: relative;
+    top: 587px;
+    /* left: 308px; */
+    border: 1px solid rgba(0,0,0,.125);
+  }
+
   .main{
     width: 767px;
   }
 
   .carousel-control-prev {
-    transform: translate(282px, -170px);
+    transform: translate(305px, -160px);
     } 
 
     .carousel-control-next {
-      transform: translate(325px, -170px);
+      transform: translate(191px, -160px);
     }
 
   .quoteContainer{
@@ -211,10 +224,6 @@ h5{
 
 @media screen and (min-width: 992px){
 
-  /* .main{
-    background: red;
-  } */
-
   .carousel-control-prev {
     width: 100%;
     position: absolute;
@@ -238,15 +247,13 @@ h5{
       align-items: center;
     }
   
-
-  /* this will need to be moved to smaller @media */
+/* 
   .carousel-item{
     /* background:rgba(0, 0, 0, 0.214); */
-    position: relative;
-  }
+    /* position: relative; */
+  } */
 
-  /* this will need to be moved to smaller @media
-  remember to check for cascading afger */
+
   .carousel-container{
     position: absolute;
     bottom:0;
