@@ -1,3 +1,5 @@
+@import url('./styles.css');
+
 body {
   font-family: 'Sen', sans-serif;
 }
@@ -23,31 +25,26 @@ h1 {
   font-weight: bold;
 }
 
-/* ///// SUBSCRIBE SECTION ///// */
-
-.subscribe-now {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font-size: 48px;
-}
-
-.form-control::placeholder {
-  color: black;
-  opacity: 1;
-}
-
 /* ///// COLORS ///// */
 
-.lead {
-  color: #495DDA;
+.black {
+  background-color: var(--black);
 }
 
-.dark-background {
+.dark-grey {
+  background-color: var(--dark-grey);
+}
+
+.darker-grey {
   background-color: rgb(22,21,26);
 }
 
+.blue-color {
+  color: var(--blue-primary);
+}
+
 .blue-background {
-  background-color: rgb(33,63,255);
+  background-color: var(--blue-primary);
   border: none;
 }
 
@@ -112,7 +109,7 @@ h1 {
   height: 63px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-top: 4px solid rgb(33,63,255);
+  border-top: 4px solid var(--blue-primary);
   background-color: white;
   color: black;
   left: 6%;
@@ -148,7 +145,21 @@ h1 {
   font-size: 17px;
 }
 
+/* ///// SUBSCRIBE SECTION ///// */
+
+.subscribe-now {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 48px;
+}
+
+.form-control::placeholder {
+  color: black;
+  opacity: 1;
+}
+
 /* ///// MEDIA QUERIES ///// */
+/* Small Mobile */
 @media (min-width: 320px) {
   .img {
     width: 100%;
@@ -166,7 +177,7 @@ h1 {
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 25px solid rgb(22,21,26);
+    border-bottom: 25px solid var(--dark-grey);
   }
   .right-point::after {
     top: -25px;
@@ -175,7 +186,7 @@ h1 {
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 25px solid rgb(22,21,26);
+    border-bottom: 25px solid var(--dark-grey);
   }
   .blue-shape {
     width: 80px;
@@ -185,12 +196,14 @@ h1 {
   }
 }
 
+/* Medium and Large Mobile */
 @media (min-width: 375px) {
   .img {
     height: 400px;
   }
 }
 
+/* Tablet */
 @media (min-width: 768px) {
   .img {
     height: 420px;
@@ -219,6 +232,7 @@ h1 {
   }
 }
 
+/* Medium Desktop */
 @media (min-width: 992px) {
   .img {
     height: 200px;
@@ -233,7 +247,7 @@ h1 {
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
-    border-right: 25px solid rgb(22,21,26);
+    border-right: 25px solid var(--black);
     border-bottom: 25px solid transparent;
   }
   .subscribe-section {
@@ -248,6 +262,7 @@ h1 {
   }
 }
 
+/* Large Desktop */
 @media (min-width: 1024px) {
   .img {
     height: 240px;
@@ -277,6 +292,7 @@ h1 {
   }
 }
 
+/* XL Desktop */
 @media (min-width: 1440px) {
   .img {
     height: 300px;
