@@ -11,11 +11,23 @@
     --button-hover: #001dd4;
  }
 
- /* global styles */
+/***************************/
+/***** global styles *******/
+/***************************/
+
  .btn {
-    transition: 0.4s all;
+   transition: 0.4s all;
+   padding: 1rem 2.5rem;
  }
  .btn:hover {
-    background-color: var(--button-hover) !important;
+   background-color: var(--button-hover) !important;
+ }
+ /* remove blue focus halo from buttons */
+ .btn:focus {
+   outline: none !important;
+   box-shadow: none !important;
+ }
+ .btn:active {
+   transform: scale(0.9);
  }
  

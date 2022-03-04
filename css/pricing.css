@@ -39,6 +39,10 @@ body {
 .border-radius {
    border-radius: 1rem;
 }
+.border-grey, .border-grey:focus, .border-grey:active, .border-grey:hover {
+  border: 1px solid var(--light-grey);
+}
+
 .border-bottom-grey {
   border-bottom: 1px solid var(--light-grey);
 }
@@ -73,7 +77,7 @@ body {
 }
 
 span.badge, .accordion-button {
-   transition: 0.5s forwards all;
+   transition: 0.4s forwards all;
 }
 /* make badge number white and background blue when accordion open */
 .accordion-button:not(.collapsed) span.badge {
@@ -102,40 +106,12 @@ span.badge, .accordion-button {
   overflow: hidden;
   width: 25rem;
 }
-
-
 .image {
    width: 100%;
    object-fit: none;
    object-position: 180% 120%;
 } 
 
-/* Gradient Animation Playground*/
-
-.btn:active {
-   background: linear-gradient(111deg, #2143fe, #1739c3, #9ec2f5);
-   background-size: 400% 400%;
-
-   -webkit-animation: AnimationName 0.3s forwards infinite;
-   -moz-animation: AnimationName 0.3s forwards infinite;
-   animation: AnimationName 0.3s forwards infinite;
-}
-
-@-webkit-keyframes AnimationName {
-   0%{background-position:0% 40%}
-   50%{background-position:100% 23%}
-   100%{background-position:0% 78%}
-}
-@-moz-keyframes AnimationName {
-   0%{background-position:0% 40%}
-   50%{background-position:100% 23%}
-   100%{background-position:0% 78%}
-}
-@keyframes AnimationName {
-   0%{background-position:0% 40%}
-   50%{background-position:100% 23%}
-   100%{background-position:0% 78%}
-}
 
 
 /*******Navbar CSS start*******/
