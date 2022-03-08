@@ -232,6 +232,13 @@ h1 {
     text-indent: 80px;
     width: 350px;
   }
+  #subscribe-input:focus {
+    background-image: none;
+    text-indent: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.1s ease;
+  }
   #subscribe-btn {
     margin-left: -55px;
     width: 150px;
