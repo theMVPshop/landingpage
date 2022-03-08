@@ -261,7 +261,7 @@ h1 {
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
-    border-right: 25px solid var(--black);
+    border-right: 25px solid var(--dark-grey);
     border-bottom: 25px solid transparent;
   }
   .subscribe-section {
@@ -269,7 +269,7 @@ h1 {
     padding-left: 80px;
   } 
   .blue-shape {
-    width: 175px;
+    width: 170px;
   }
   #stars {
     margin-top: -30px;
