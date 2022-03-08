@@ -162,7 +162,6 @@
 
 #mobile .hamburgerFixed {
   position: fixed !important;
-  top: 20px;
 }
 
 .grow {
@@ -298,6 +297,7 @@
 
   #mobileHamburger {
     position: absolute;
+    top: 23px;
   }
 
   #hamburgerCont {
