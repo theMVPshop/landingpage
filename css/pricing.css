@@ -113,15 +113,3 @@ span.badge, .accordion-button {
 } 
 
 
-
-/*******Navbar CSS start*******/
-
-.nav-list a {
-   color: darkslategray !important;
-}
-.nav-open {
-   background-color: #fdfdfd;
-   z-index: 1000;
-}
- 
-/*******Navbar CSS end*******/
