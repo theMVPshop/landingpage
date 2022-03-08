@@ -1,15 +1,17 @@
 /* color variables */
 :root {
-  --black: #0f0d12;
-  --blue-primary: #4169e1;
-  --blue-secondary: mediumblue;
-  --blue-third: lightskyblue;
-  --dark-grey: #27262b;
-  --white: #fdfdfd;
-  --light-grey: lightslategray;
-  --badge-color: lavender;
-  --button-hover: #001dd4;
-}
+
+    --black: #0f0d12; 
+    --blue-primary: #4a36ff;
+    --blue-secondary: mediumblue;
+    --blue-third: lightskyblue;
+    --dark-grey: #27262b;
+    --white: #fdfdfd;
+    --light-grey: lightslategray;
+    --badge-color: lavender;
+    --button-hover: #001dd4;
+ }
+
 
 /***************************/
 /***** global styles *******/
