@@ -40,6 +40,98 @@ body {
 
 /*HAMBURGER STYLING STARTS*/
 
+#mobileNavContentContainer {
+  z-index: 20;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobileNavContentContainer a {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.hamburgerFixed {
+  position: fixed !important;
+  top: 40px;
+}
+
+.grow {
+  animation-duration: 0.5s;
+  animation-name: grow;
+  z-index: 11;
+  animation-fill-mode: forwards;
+  position: fixed !important;
+}
+
+.shrink {
+  animation-duration: 0.5s;
+  animation-name: shrink;
+  z-index: 11;
+  position: absolute !important;
+}
+
+@keyframes grow {
+  from {
+    height: 250px;
+    width: 250px;
+  }
+
+  to {
+    height: 300vw;
+    width: 300vw;
+    margin-left: -50%;
+    margin-top: -50%;
+  }
+}
+
+@keyframes shrink {
+  from {
+    height: 250vw;
+    width: 250vw;
+    margin-left: -50%;
+    margin-top: -50%;
+  }
+
+  to {
+    height: 200px;
+    width: 200px;
+    margin-left: -15%;
+    margin-top: -15%;
+  }
+}
+
+#backgroundCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#navMenuBackground {
+  display: none;
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -15%;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(48, 22, 195, 1);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+#mobileHamburgerCont {
+  display: none;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+}
+
 #hamburgerCont {
   position: relative;
 }
@@ -480,6 +572,17 @@ body {
 }
 
 @media only screen and (max-width: 603px) {
+  #navMenuBackground {
+    display: flex;
+  }
+
+  #mobileHamburgerCont {
+    display: flex;
+  }
+
+  #hamburgerCont {
+    display: none;
+  }
   #iconsSection {
     display: none;
   }

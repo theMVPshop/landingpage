@@ -14,15 +14,26 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="../scripts/hamburger.js"></script>
   </head>
   <body>
     <div class="container-fluid" id="container">
+      <div id="navMenuBackground"></div>
+      <div id="mobileNavContentContainer">
+          <a href="">Home</a>
+          <a href="">Pricing</a>
+          <a href="">Lorem</a>
+          <a href="">About Us</a>
+
+      </div>
+      
       <div class="row" id="header">
         <div
           class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
           id="headerLeft"
         >
+        <div id="mobileHamburgerCont">
+          <img src="../images/hamburger-menu.svg" id="mobileHamburger">
+        </div>
         <div id="hamburgerCont">
           <nav class="navbar" >
               <img class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" src="../images/hamburger-menu.svg" id="hamburger">
@@ -37,7 +48,6 @@
                 </div>
             </div>  
         </nav>
-
         </div>
         </div>
         <div id="title">
@@ -150,4 +160,5 @@
       </section>
     </div>
   </body>
+  <script src="../scripts/hamburger.js"></script>
 </html>
