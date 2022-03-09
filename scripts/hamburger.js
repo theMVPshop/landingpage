@@ -7,10 +7,11 @@ var state = false;
 const handleButtonClick = () => {
   if (state) {
     navBackground.classList.remove("grow");
-    navBackground.classList.add("shrink");
+
     setTimeout(() => {
       content.style.display = "none";
     }, 50);
+    navBackground.classList.add("shrink");
     dropDown.classList.remove("hamburgerFixed");
 
     return (state = false);
