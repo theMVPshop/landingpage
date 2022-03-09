@@ -73,6 +73,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 3vw;
+  z-index: 11;
 }
 
 #headerRight a {
@@ -110,7 +111,6 @@
   font-size: 18px;
   transition: 0.3s;
   cursor: pointer;
-  z-index: 11;
 }
 
 #signUpButton:hover {
