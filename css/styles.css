@@ -149,36 +149,6 @@
   position: absolute !important;
 }
 
-@keyframes grow {
-  from {
-    height: 250px;
-    width: 250px;
-  }
-
-  to {
-    height: 300vw;
-    width: 300vw;
-    margin-left: -50%;
-    margin-top: -50%;
-  }
-}
-
-@keyframes shrink {
-  from {
-    height: 250vw;
-    width: 250vw;
-    margin-left: -50%;
-    margin-top: -50%;
-  }
-
-  to {
-    height: 200px;
-    width: 200px;
-    margin-left: -15%;
-    margin-top: -15%;
-  }
-}
-
 #backgroundCont {
   position: absolute;
   top: 0;
