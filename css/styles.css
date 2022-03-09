@@ -33,6 +33,12 @@
 
 /* NavBar styles TEMPORARILY COMMENTED OUT TO TEST*/
 
+/* Black background */
+
+.bg-black {
+  background-color: var(--black);
+}
+
 /*Header Styles Test*/
 
 #header {
@@ -41,6 +47,7 @@
   margin-bottom: 30px;
   max-width: 100%;
   height: 100px;
+  background-color: var(--black);
 }
 
 #title {
@@ -66,6 +73,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 3vw;
+  z-index: 11;
 }
 
 #headerRight a {
@@ -295,7 +303,7 @@
   }
 }
 
-@media only scren and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   @keyframes grow {
     from {
       height: 250px;

@@ -12,6 +12,14 @@ h1 {
   font-weight: bold;
 }
 
+#mobileHamburger {
+  padding-left: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
 /* ///// BUTTONS ///// */
 
 .btn {

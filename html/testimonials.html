@@ -13,40 +13,53 @@
 </head>
 
 <body>
-  <div class="container-fluid" id="container">
-    <div class="row" id="header">
-      <div
-        class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
-        id="headerLeft"
-      >
-      <div id="hamburgerCont">
-        <nav class="navbar" >
-            <img class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" src="../images/hamburger-menu.svg" id="hamburger">
-          <div class="navbar-collapse collapse nav-open" id="navbar">
-            <div class="" id="dropDownCont">
-                <ul class="navbar-nav nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-              </div>
-          </div>  
-      </nav>
+  <div class="container-fluid p-0 bg-black">
 
-      </div>
-      </div>
-      <div id="title">
-        <img src="../images/zospace-logo.svg">
-      </div>
-      <div
-        class="col-lg-6 d-lg-flex d-xl-flex d-none d-sm-none"
-        id="headerRight"
-      >
-        <a href="https://www.google.com">Try for free!</a>
-        <button id="signUpButton">Sign Up</button>
-      </div>
-    </div>
+<div id="navMenuBackground"></div>
+<div id="mobileNavContentContainer">
+    <a href="">Home</a>
+    <a href="">Pricing</a>
+    <a href="">Lorem</a>
+    <a href="">About Us</a>
+</div>
+<!--TO HERE-->  
+<div class="row" id="header">
+  <div
+    class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
+    id="headerLeft"
+  >
+  <div id="mobileHamburgerCont">
+    <img class="ps-4" src="../images/hamburger-menu.svg" id="mobileHamburger">
+  </div>
+  <div id="hamburgerCont">
+    <nav class="navbar" >
+        <img class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" src="../images/hamburger-menu.svg" id="hamburger">
+      <div class="navbar-collapse collapse nav-open" id="navbar">
+        <div class="" id="dropDownCont">
+            <ul class="navbar-nav nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Product</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+      </div>  
+  </nav>
+  </div>
+  </div>
+  <div id="title">
+    <img src="../images/zospace-logo.svg">
+  </div>
+  <div
+    class="col-lg-6 d-lg-flex d-xl-flex d-none d-sm-none"
+    id="headerRight"
+  >
+    <a href="https://www.google.com">Try for free!</a>
+    <button class="btn" id="signUpButton">Sign Up</button>
+  </div>
+</div>
+  </div>
+  <div class="container-fluid" id="container">
   <div class="line"></div>
   <!-- arrows and "Testimonials" -->
   <div class="container-fluid main d-flex flex-column">
@@ -178,4 +191,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
+<script src="../scripts/hamburger.js"></script>
 </html>
