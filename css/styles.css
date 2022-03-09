@@ -110,6 +110,7 @@
   font-size: 18px;
   transition: 0.3s;
   cursor: pointer;
+  z-index: 11;
 }
 
 #signUpButton:hover {
