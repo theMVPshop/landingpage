@@ -8,6 +8,12 @@ h1 {
   font-size: 50px;
 }
 
+.bold-font {
+  font-weight: bold;
+}
+
+/* ///// BUTTONS ///// */
+
 .btn {
   width: 150px;
 }
@@ -21,8 +27,9 @@ h1 {
   margin-top: 90px;
 }
 
-.bold-font {
-  font-weight: bold;
+.btn-margin-more:hover {
+  color: white;
+  border: 1px solid var(--button-hover);
 }
 
 /* ///// COLORS ///// */
@@ -225,6 +232,13 @@ h1 {
     text-indent: 80px;
     width: 350px;
   }
+  #subscribe-input:focus {
+    background-image: none;
+    text-indent: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.1s ease;
+  }
   #subscribe-btn {
     margin-left: -55px;
     width: 150px;
@@ -247,7 +261,7 @@ h1 {
     width: 0;
     height: 0;
     border-top: 25px solid transparent;
-    border-right: 25px solid var(--black);
+    border-right: 25px solid var(--dark-grey);
     border-bottom: 25px solid transparent;
   }
   .subscribe-section {
@@ -255,7 +269,7 @@ h1 {
     padding-left: 80px;
   } 
   .blue-shape {
-    width: 175px;
+    width: 170px;
   }
   #stars {
     margin-top: -30px;

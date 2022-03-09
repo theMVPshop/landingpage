@@ -9,33 +9,37 @@
     --light-grey: lightslategray;
     --badge-color: lavender;
     --button-hover: #001dd4;
- }
+}
 
 /***************************/
 /***** global styles *******/
 /***************************/
 
- .btn {
-   transition: 0.4s all;
-   padding: 1rem 2.5rem;
- }
- .btn:hover {
-   background-color: var(--button-hover) !important;
- }
- /* remove blue focus halo from buttons */
- .btn:focus {
-   outline: none !important;
-   box-shadow: none !important;
- }
- .btn:active {
-   transform: scale(0.9);
- }
- 
-
- /* NavBar styles */
- #container {
-  padding: 0px;
+.btn {
+  transition: 0.4s all;
+  padding: 1rem 2.5rem;
 }
+.btn:hover {
+  background-color: var(--button-hover) !important;
+}
+/* remove blue focus halo from buttons */
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* NavBar styles TEMPORARILY COMMENTED OUT TO TEST*/
+
+/* Black background */
+
+.bg-black {
+  background-color: var(--black);
+}
+
+/*Header Styles Test*/
 
 #header {
   position: relative;
@@ -43,7 +47,7 @@
   margin-bottom: 30px;
   max-width: 100%;
   height: 100px;
-  margin: 0px;
+  background-color: var(--black);
 }
 
 #title {
@@ -64,4 +68,307 @@
   align-items: center;
 }
 
+#headerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3vw;
+}
 
+#headerRight a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid white;
+  height: 30px;
+  text-decoration: none;
+}
+
+#headerRight button {
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+}
+
+#title p {
+  text-align: center;
+  margin: 0px;
+}
+
+#signUpButton {
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: #0e0d12;
+  width: 170px;
+  height: 60px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#signUpButton:hover {
+  background-color: #001dd4;
+}
+
+/*Header Styles End*/
+
+/*HAMBURGER STYLES*/
+
+#mobileNavContentContainer {
+  z-index: 20;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobileNavContentContainer a {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+#mobile .hamburgerFixed {
+  position: fixed !important;
+}
+
+.grow {
+  animation-duration: 0.5s;
+  animation-name: grow;
+  z-index: 11;
+  animation-fill-mode: forwards;
+  position: fixed !important;
+}
+
+.shrink {
+  animation-duration: 0.5s;
+  animation-name: shrink;
+  z-index: 11;
+  position: absolute !important;
+}
+
+@keyframes grow {
+  from {
+    height: 250px;
+    width: 250px;
+  }
+
+  to {
+    height: 300vw;
+    width: 300vw;
+    margin-left: -50%;
+    margin-top: -50%;
+  }
+}
+
+@keyframes shrink {
+  from {
+    height: 250vw;
+    width: 250vw;
+    margin-left: -50%;
+    margin-top: -50%;
+  }
+
+  to {
+    height: 200px;
+    width: 200px;
+    margin-left: -15%;
+    margin-top: -15%;
+  }
+}
+
+#backgroundCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#navMenuBackground {
+  display: none;
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -15%;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(48, 22, 195, 1);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+#mobileHamburgerCont {
+  display: none;
+  z-index: 20;
+  cursor: pointer;
+}
+
+#hamburgerCont {
+  z-index: 10;
+  position: relative;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#hamburgerCont a {
+  font-size: 20px;
+  border-bottom: 0px solid white;
+}
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 30px;
+}
+
+#hamburger {
+  border: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+.zospaceLogo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  text-align: left;
+}
+
+.nav-list li {
+  margin: 0px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.nav-list li a {
+  padding: 0px;
+}
+
+#dropDownCont {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1010px) {
+  #navMenuBackground {
+    display: flex;
+  }
+
+  #mobileHamburgerCont {
+    display: flex;
+  }
+
+  #mobileHamburger {
+    position: absolute;
+    top: 23px;
+  }
+
+  #hamburgerCont {
+    display: none;
+  }
+
+  #navMenuBackground {
+    margin-left: -10%;
+    margin-top: -10%;
+    width: 25vw;
+    height: 25vw;
+    background-color: rgba(48, 22, 195, 1);
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  @keyframes grow {
+    from {
+      height: 25vw;
+      width: 25vw;
+    }
+
+    to {
+      height: 300vw;
+      width: 300vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 250vw;
+      width: 250vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 25vw;
+      width: 25vw;
+      margin-left: -10%;
+      margin-top: -10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  @keyframes grow {
+    from {
+      height: 250px;
+      width: 250px;
+    }
+
+    to {
+      height: 300vw;
+      width: 300vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 250vw;
+      width: 250vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 200px;
+      width: 200px;
+      margin-left: -15%;
+      margin-top: -15%;
+    }
+  }
+
+  #navMenuBackground {
+    margin-left: -15%;
+    margin-top: -15%;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*HAMBURGER STYLE END*/

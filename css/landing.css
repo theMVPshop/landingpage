@@ -38,63 +38,6 @@ body {
   align-items: center;
 }
 
-/*HAMBURGER STYLING STARTS*/
-
-#hamburgerCont {
-  position: relative;
-}
-
-.navbar {
-  margin: 0px;
-  padding: 0px;
-}
-
-#navbar {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  top: 30px;
-}
-
-#hamburger {
-  border: 0px;
-  position: relative;
-  z-index: 10;
-}
-
-.zospaceLogo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.nav-list {
-  text-align: left;
-}
-
-.nav-list li {
-  margin: 0px;
-  width: 100%;
-  height: auto;
-  text-align: left;
-  font-size: 20px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.nav-list li a {
-  padding: 0px;
-}
-
-#dropDownCont {
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-/*HAMBURGER STYLING ENDS*/
-
 #headerRight {
   display: flex;
   justify-content: flex-end;
