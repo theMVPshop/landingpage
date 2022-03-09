@@ -303,4 +303,11 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #navMenuBackground {
+    width: 155px;
+    height: 155px;
+  }
+}
+
 /*HAMBURGER STYLE END*/
