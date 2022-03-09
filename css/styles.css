@@ -1,14 +1,14 @@
 /* color variables */
 :root {
-  --black: #0f0d12;
-  --blue-primary: #4a36ff;
-  --blue-secondary: mediumblue;
-  --blue-third: lightskyblue;
-  --dark-grey: #27262b;
-  --white: #fdfdfd;
-  --light-grey: lightslategray;
-  --badge-color: lavender;
-  --button-hover: #001dd4;
+    --black: #0f0d12; 
+    --blue-primary: #4169e1;
+    --blue-secondary: mediumblue;
+    --blue-third: #87cefa;
+    --dark-grey: #27262b;
+    --white: #fdfdfd;
+    --light-grey: lightslategray;
+    --badge-color: lavender;
+    --button-hover: #001dd4;
 }
 
 /***************************/
@@ -73,7 +73,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 3vw;
-  z-index: 11;
+  z-index: 9;
 }
 
 #headerRight a {

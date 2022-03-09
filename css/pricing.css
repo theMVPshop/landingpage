@@ -111,3 +111,12 @@ span.badge, .accordion-button {
    object-fit: none;
    object-position: 180% 120%;
 } 
+
+/* navbar tweaking */
+
+#hamburgerCont {
+   color: white;
+}
+#hamburgerCont a {
+   cursor: pointer;
+}
