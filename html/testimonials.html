@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/testimonials.css">
+  <link rel="stylesheet" href="../css/styles">
+
   
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-  <div class="container-fluid" id="container">
+  <!-- <div class="container-fluid" id="container">
     <div class="row" id="header">
       <div
         class="col-lg-6 col-md-12 col-sm-12 col-12 navItem"
@@ -46,7 +48,7 @@
         <a href="https://www.google.com">Try for free!</a>
         <button id="signUpButton">Sign Up</button>
       </div>
-    </div>
+    </div> -->
   <div class="line"></div>
   <!-- arrows and "Testimonials" -->
   <div class="container-fluid main d-flex flex-column">
@@ -57,10 +59,14 @@
       <div class="col-6 arrowButtons">
         <!-- <button>right arrow button</button> -->
       </div>
+     
       <h6 class="testText">Testimonials</h6>
     </div>
 
     <br>
+
+    
+
     <!-- this div is from the carousel tutorial; the outer container -->
     <!-- change data ride to carousel to turn on automatic slide -->
     <div id='myCarousel' class="carousel slide row middleRow" 
@@ -134,21 +140,28 @@
         </div>
       </div>
 
+      <!-- <img class="leftArr" src="../images/lArrow.svg"/> -->
+      <!-- <button class="prevButton"> -->
       <a href="#myCarousel"
-      class="carousel-control-prev" role="button"
+      class="carousel-control-prev prevButton " role="button"
       data-slide="prev">
         <span class="sr-only">Previous</span>
         <span class="carousel-control-prev-icon"
         aria-hidden="true"></span>
       </a>
-      <!-- right arrow slider control -->
+    <!-- </button> -->
+
+    <!-- right arrow slider control -->
       <a href="#myCarousel"
-      class="carousel-control-next" role="button"
+      class="carousel-control-next nextButton" role="button"
       data-slide="prev">
         <span class="sr-only">Next</span>
         <span class="carousel-control-next-icon"
         aria-hidden="true"></span>
       </a>
+      
+      
+     
 
     </div>
 
@@ -162,9 +175,9 @@
       <div class="d-flex justify-content-start justify-content-lg-between align-items-center buttonBox">
         <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img class="brandButtonImg" src="../images/spotify.svg"/></button>
         <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img src="../images/we-box.svg"/></button>
-        <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img  src="../images/slack-box.svg"/></button>
+        <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img class="brandButtonImg" src="../images/slack-box.svg"/></button>
         <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img class="brandButtonImg" src="../images/miro-box.svg"/></button>
-        <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img  src="../images/dropbox-box.svg"/></button>
+        <button class="col-lg-2 col-md-5 justify-content-center brandButton"><img  class="brandButtonImg"src="../images/dropbox-box.svg"/></button>
         <!-- <button class="col-lg-2 col-md-5 justify-content-center brandButton"></button> -->
 
       </div>

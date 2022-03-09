@@ -1,9 +1,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.63 59.74" style="enable-background:new 0 0 58.63 59.74;" xml:space="preserve">
     <style type="text/css">
-        .st0{fill:#4169e1;}
+        <!-- .st0{fill:green;}
+        .st0:hover{fill:#ff00ff !important; opacity:1;} -->
         .st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+        <!-- .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;} -->
+
     </style>
-    <circle class="st0" cx="29.04" cy="30.04" r="28.04"/>
+    <!-- <circle class="st0" cx="29.04" cy="30.04" r="28.04"/> -->
     <line class="st1" x1="32.57" y1="23.31" x2="26.6" y2="29.55"/>
     <line class="st1" x1="32.51" y1="35.53" x2="26.6" y2="29.55"/>
 </svg>

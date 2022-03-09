@@ -3,7 +3,7 @@
     --black: #0f0d12; 
     --blue-primary: #4169e1;
     --blue-secondary: mediumblue;
-    --blue-third: lightskyblue;
+    --blue-third: #87cefa;
     --dark-grey: #27262b;
     --white: #fdfdfd;
     --light-grey: lightslategray;
@@ -63,3 +63,5 @@
   padding-left: 3vw;
   align-items: center;
 }
+
+
