@@ -73,6 +73,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 3vw;
+  z-index: 11;
 }
 
 #headerRight a {
