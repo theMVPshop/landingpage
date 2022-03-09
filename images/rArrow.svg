@@ -1,9 +1,9 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.63 59.74" style="enable-background:new 0 0 58.63 59.74;" xml:space="preserve">
+<svg class="svgRArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58.63 59.74" style="enable-background:new 0 0 58.63 59.74;" xml:space="preserve">
     <style type="text/css">
-        .st0{fill:#4169e1;}
+        <!-- .st0{fill:#4169e1;} -->
         .st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
     </style>
-    <circle class="st0" cx="29.04" cy="30.04" r="28.04"/>
+    <!-- <circle class="st0" cx="29.04" cy="30.04" r="28.04"/> -->
     <line class="st1" x1="25.52" y1="36.78" x2="31.49" y2="30.53"/>
     <line class="st1" x1="25.57" y1="24.56" x2="31.49" y2="30.53"/>
 </svg>
