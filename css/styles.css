@@ -306,8 +306,8 @@
 @media only screen and (max-width: 700px) {
   @keyframes grow {
     from {
-      height: 250px;
-      width: 250px;
+      height: 27vw;
+      width: 27vw;
     }
 
     to {
@@ -327,18 +327,131 @@
     }
 
     to {
-      height: 200px;
-      width: 200px;
-      margin-left: -15%;
-      margin-top: -15%;
+      height: 27vw;
+      width: 27vw;
+      margin-left: -8vw;
+      margin-top: -8vw;
     }
   }
 
   #navMenuBackground {
-    margin-left: -15%;
-    margin-top: -15%;
-    width: 200px;
-    height: 200px;
+    margin-left: -8vw;
+    margin-top: -8vw;
+    width: 27vw;
+    height: 27vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes grow {
+    from {
+      height: 30vw;
+      width: 30vw;
+    }
+
+    to {
+      height: 300vw;
+      width: 300vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 250vw;
+      width: 250vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 30vw;
+      width: 30vw;
+      margin-left: -8vw;
+      margin-top: -8vw;
+    }
+  }
+
+  #navMenuBackground {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  @keyframes grow {
+    from {
+      height: 33vw;
+      width: 33vw;
+    }
+
+    to {
+      height: 300vw;
+      width: 300vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 250vw;
+      width: 250vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 33vw;
+      width: 33vw;
+      margin-left: -8vw;
+      margin-top: -8vw;
+    }
+  }
+
+  #navMenuBackground {
+    margin-left: -8vw;
+    margin-top: -8vw;
+    width: 33vw;
+    height: 33vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  @keyframes grow {
+    from {
+      height: 35vw;
+      width: 35vw;
+    }
+
+    to {
+      height: 300vw;
+      width: 300vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 250vw;
+      width: 250vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 35vw;
+      width: 35vw;
+      margin-left: -8vw;
+      margin-top: -8vw;
+    }
+  }
+
+  #navMenuBackground {
+    width: 35vw;
+    height: 35vw;
   }
 }
 
