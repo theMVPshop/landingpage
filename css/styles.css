@@ -1,14 +1,14 @@
 /* color variables */
 :root {
-    --black: #0f0d12; 
-    --blue-primary: #4169e1;
-    --blue-secondary: mediumblue;
-    --blue-third: #87cefa;
-    --dark-grey: #27262b;
-    --white: #fdfdfd;
-    --light-grey: lightslategray;
-    --badge-color: lavender;
-    --button-hover: #001dd4;
+  --black: #0f0d12;
+  --blue-primary: #4169e1;
+  --blue-secondary: mediumblue;
+  --blue-third: #87cefa;
+  --dark-grey: #27262b;
+  --white: #fdfdfd;
+  --light-grey: lightslategray;
+  --badge-color: lavender;
+  --button-hover: #001dd4;
 }
 
 /***************************/
@@ -263,10 +263,10 @@
   }
 
   #navMenuBackground {
-    margin-left: -10%;
-    margin-top: -10%;
-    width: 25vw;
-    height: 25vw;
+    margin-left: -60px;
+    margin-top: -60px;
+    width: 180px;
+    height: 180px;
     background-color: rgba(48, 22, 195, 1);
     z-index: 10;
     border-radius: 50%;
@@ -274,8 +274,8 @@
 
   @keyframes grow {
     from {
-      height: 25vw;
-      width: 25vw;
+      height: 180px;
+      width: 180px;
     }
 
     to {
@@ -295,163 +295,11 @@
     }
 
     to {
-      height: 25vw;
-      width: 25vw;
-      margin-left: -10%;
-      margin-top: -10%;
+      height: 180px;
+      width: 180px;
+      margin-left: -60px;
+      margin-top: -60px;
     }
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  @keyframes grow {
-    from {
-      height: 27vw;
-      width: 27vw;
-    }
-
-    to {
-      height: 300vw;
-      width: 300vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-  }
-
-  @keyframes shrink {
-    from {
-      height: 250vw;
-      width: 250vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-
-    to {
-      height: 27vw;
-      width: 27vw;
-      margin-left: -8vw;
-      margin-top: -8vw;
-    }
-  }
-
-  #navMenuBackground {
-    margin-left: -8vw;
-    margin-top: -8vw;
-    width: 27vw;
-    height: 27vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  @keyframes grow {
-    from {
-      height: 30vw;
-      width: 30vw;
-    }
-
-    to {
-      height: 300vw;
-      width: 300vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-  }
-
-  @keyframes shrink {
-    from {
-      height: 250vw;
-      width: 250vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-
-    to {
-      height: 30vw;
-      width: 30vw;
-      margin-left: -8vw;
-      margin-top: -8vw;
-    }
-  }
-
-  #navMenuBackground {
-    width: 30vw;
-    height: 30vw;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  @keyframes grow {
-    from {
-      height: 33vw;
-      width: 33vw;
-    }
-
-    to {
-      height: 300vw;
-      width: 300vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-  }
-
-  @keyframes shrink {
-    from {
-      height: 250vw;
-      width: 250vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-
-    to {
-      height: 33vw;
-      width: 33vw;
-      margin-left: -8vw;
-      margin-top: -8vw;
-    }
-  }
-
-  #navMenuBackground {
-    margin-left: -8vw;
-    margin-top: -8vw;
-    width: 33vw;
-    height: 33vw;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  @keyframes grow {
-    from {
-      height: 35vw;
-      width: 35vw;
-    }
-
-    to {
-      height: 300vw;
-      width: 300vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-  }
-
-  @keyframes shrink {
-    from {
-      height: 250vw;
-      width: 250vw;
-      margin-left: -50%;
-      margin-top: -50%;
-    }
-
-    to {
-      height: 35vw;
-      width: 35vw;
-      margin-left: -8vw;
-      margin-top: -8vw;
-    }
-  }
-
-  #navMenuBackground {
-    width: 35vw;
-    height: 35vw;
   }
 }
 
