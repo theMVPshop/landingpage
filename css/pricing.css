@@ -119,4 +119,21 @@ span.badge, .accordion-button {
 #hamburgerCont {
    color: white;
 }
+#hamburgerCont a {
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 414px) {
+   #headerLeft {
+      padding-left: 30px;
+    }
+ }
+ 
+ @media only screen and (max-width: 300px) {
+   #headerLeft {
+     padding-left: 20px;
+   }
+ }
+ 
+ /*HAMBURGER STYLE END*/
 
