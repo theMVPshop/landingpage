@@ -36,9 +36,11 @@ const handleButtonClick = () => {
 
 const handleResize = (e) => {
   if (e.currentTarget.innerWidth > 1010) {
-    if (navBackground.classList.contains("shrink") {
-        navBackground.classList.remove("shrink")
-    })
+    if (navBackground.classList.contains("grow")) {
+      navBackground.classList.remove("grow");
+      content.style.display = "none";
+      return (state = false);
+    }
   }
 };
 

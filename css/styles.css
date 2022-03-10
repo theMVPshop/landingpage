@@ -157,9 +157,9 @@
   position: fixed !important;
 }
 
-/* .static {
+.static {
   position: absolute;
-} */
+}
 
 #backgroundCont {
   position: absolute;
