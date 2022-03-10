@@ -11,16 +11,15 @@ body{
   color: white;
 }
 
-#mobileHamburger{
-  margin-left: 5px;
-} 
-
+#navCont{
+  width: 100%;
+  background-color: green;
+}
 
 .line{
   width: 100vw;
   position: relative;
   top: 700px;
-  /* left: 308px; */
   border: 1px solid rgba(0,0,0,.125);
 }
 
@@ -45,7 +44,6 @@ body{
 }
 
 .carousel-control-prev{
-  /* width: 16%; */
   position: absolute;
   bottom: 80%;
   right: 50%;
@@ -202,12 +200,10 @@ h5{
   }
 
   .carousel-control-prev{
-    /* margin-top: 160px; */
     transform: translate(305px, -150px);
   } 
 
   .carousel-control-next {
-    /* margin-top: 160px; */
     transform: translate(125px, -150px);
   }
 
@@ -230,7 +226,6 @@ h5{
 
   .buttonBox{
     width: 650px;
-    /* flex-wrap: wrap; */
     margin-left: 70px;
     margin-bottom: 50px;
   }
@@ -239,7 +234,6 @@ h5{
 @media (min-width: 992px){
 
   .carousel-control-prev {
-    /* width: 100%; */
     position: absolute;
     bottom: 0%;
     right: 0%;
