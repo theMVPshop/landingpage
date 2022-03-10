@@ -2,10 +2,12 @@
 
 body {
    font-family: 'Sen', sans-serif;
-}
-.bg-black {
    background-color: var(--black);
 }
+#cards-container {
+   background-color: var(--black);
+}
+
 .bg-grey {
    background-color: var(--dark-grey);
 }
