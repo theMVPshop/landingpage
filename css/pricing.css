@@ -2,10 +2,12 @@
 
 body {
    font-family: 'Sen', sans-serif;
-}
-.bg-black {
    background-color: var(--black);
 }
+#cards-container {
+   background-color: var(--black);
+}
+
 .bg-grey {
    background-color: var(--dark-grey);
 }
@@ -117,6 +119,4 @@ span.badge, .accordion-button {
 #hamburgerCont {
    color: white;
 }
-#hamburgerCont a {
-   cursor: pointer;
-}
+

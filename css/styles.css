@@ -36,7 +36,7 @@
 /* Black background */
 
 .bg-black {
-  background-color: var(--black);
+  background-color: #0f0d12;
 }
 
 /*Header Styles Test*/
@@ -312,7 +312,7 @@ padding-right #signUpButton:hover {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   #headerLeft {
     padding-left: 15px;
   }
