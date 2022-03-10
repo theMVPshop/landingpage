@@ -16,6 +16,21 @@ a {
   cursor: pointer;
 }
 
+/* ///// NAV ///// */
+
+#mobileNavContentContainer > a {
+  text-decoration: none;
+}
+
+#hamburgerCont > a {
+  text-decoration: none;
+  color: white;
+}
+
+#hamburgerCont > a:hover {
+  border-bottom: 1px solid var(--blue-primary);
+}
+
 /* ///// BUTTONS ///// */
 
 .btn {
@@ -210,6 +225,12 @@ a {
 @media (min-width: 375px) {
   .img {
     height: 400px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #mobileHamburger {
+    margin-left: 15px;
   }
 }
 
