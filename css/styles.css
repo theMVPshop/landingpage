@@ -113,8 +113,7 @@
   cursor: pointer;
 }
 
-padding-right
-#signUpButton:hover {
+padding-right #signUpButton:hover {
   background-color: #001dd4;
 }
 
@@ -255,6 +254,8 @@ padding-right
   }
   #navMenuBackground {
     display: flex;
+    -webkit-box-shadow: 3px 3px 6px -3px #000000;
+    box-shadow: 3px 3px 6px -3px #000000;
   }
 
   #mobileHamburgerCont {
