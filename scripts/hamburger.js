@@ -12,6 +12,11 @@ const handleButtonClick = () => {
       content.style.display = "none";
     }, 50);
 
+    setTimeout(() => {
+      navBackground.classList.remove("shrink");
+      navBackground.classList.add("static");
+    }, 360);
+    dropDown.style.position = "absolute";
     dropDown.classList.remove("hamburgerFixed");
 
     return (state = false);
@@ -21,11 +26,22 @@ const handleButtonClick = () => {
     }
     setTimeout(() => {
       content.style.display = "flex";
-    }, 50);
+      dropDown.style.position = "fixed";
+    }, 100);
     navBackground.classList.add("grow");
     dropDown.classList.add("hamburgerFixed");
     return (state = true);
   }
 };
 
+const handleResize = (e) => {
+  if (e.currentTarget.innerWidth > 1010) {
+    if (navBackground.classList.contains("shrink") {
+        navBackground.classList.remove("shrink")
+    })
+  }
+};
+
 dropDown.addEventListener("click", handleButtonClick);
+
+window.addEventListener("resize", handleResize);

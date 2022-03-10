@@ -12,80 +12,6 @@ body {
   margin: 0px;
 }
 
-#header {
-  position: relative;
-  padding-top: 20px;
-  margin-bottom: 30px;
-  max-width: 100%;
-  height: 100px;
-}
-
-#title {
-  width: 100%;
-  position: absolute;
-  font-size: 25px;
-  font-weight: 700;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#headerLeft {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 3vw;
-  align-items: center;
-}
-
-#headerRight {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 3vw;
-}
-
-#headerRight a {
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-bottom: 1px solid white;
-  height: 30px;
-  text-decoration: none;
-}
-
-#headerRight button {
-  margin-left: 2vw;
-  cursor: pointer;
-}
-
-.navItem {
-  display: flex;
-  justify-content: center;
-}
-
-#title p {
-  text-align: center;
-  margin: 0px;
-}
-
-#signUpButton {
-  border-radius: 50px;
-  border: 1px solid white;
-  background-color: #0e0d12;
-  width: 170px;
-  height: 60px;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-#signUpButton:hover {
-  background-color: #001dd4;
-}
-
 /*Banner Section*/
 
 #banner {
@@ -301,9 +227,6 @@ body {
 /*Media Queries*/
 
 @media only screen and (max-width: 992px) {
-  #headerLeft {
-    padding-left: 5vw;
-  }
   #banner {
     padding-top: 0px;
     background: none;

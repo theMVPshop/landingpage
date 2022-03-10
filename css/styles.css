@@ -154,8 +154,12 @@
   animation-duration: 0.5s;
   animation-name: shrink;
   z-index: 11;
-  position: absolute !important;
+  position: fixed !important;
 }
+
+/* .static {
+  position: absolute;
+} */
 
 #backgroundCont {
   position: absolute;
@@ -245,6 +249,9 @@
 }
 
 @media only screen and (max-width: 1010px) {
+  #headerLeft {
+    padding-left: 30px;
+  }
   #navMenuBackground {
     display: flex;
   }
@@ -255,7 +262,7 @@
 
   #mobileHamburger {
     position: absolute;
-    top: 23px;
+    margin-top: -17px;
   }
 
   #hamburgerCont {
@@ -304,9 +311,92 @@
 }
 
 @media only screen and (max-width: 400px) {
+  #headerLeft {
+    padding-left: 15px;
+  }
+
+  #mobileHamburger {
+    margin-top: -35px;
+  }
+
   #navMenuBackground {
-    width: 155px;
-    height: 155px;
+    width: 140px;
+    height: 140px;
+  }
+
+  @keyframes grow {
+    from {
+      height: 140px;
+      width: 140px;
+    }
+
+    to {
+      height: 350vw;
+      width: 350vw;
+      margin-left: -55%;
+      margin-top: -55%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 350vw;
+      width: 350vw;
+      margin-left: -55%;
+      margin-top: -55%;
+    }
+
+    to {
+      height: 140px;
+      width: 140px;
+      margin-left: -60px;
+      margin-top: -60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #headerLeft {
+    padding-left: 10px;
+  }
+
+  #mobileHamburger {
+    margin-top: -45px;
+  }
+
+  #navMenuBackground {
+    width: 130px;
+    height: 130px;
+  }
+
+  @keyframes grow {
+    from {
+      height: 140px;
+      width: 140px;
+    }
+
+    to {
+      height: 350vw;
+      width: 350vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+  }
+
+  @keyframes shrink {
+    from {
+      height: 350vw;
+      width: 350vw;
+      margin-left: -50%;
+      margin-top: -50%;
+    }
+
+    to {
+      height: 140px;
+      width: 140px;
+      margin-left: -60px;
+      margin-top: -60px;
+    }
   }
 }
 
