@@ -39,6 +39,7 @@ const handleResize = (e) => {
     if (navBackground.classList.contains("grow")) {
       navBackground.classList.remove("grow");
       content.style.display = "none";
+      dropDown.classList.remove("hamburgerFixed");
       return (state = false);
     }
   }

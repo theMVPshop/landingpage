@@ -36,7 +36,7 @@
 /* Black background */
 
 .bg-black {
-  background-color: var(--black);
+  background-color: #0f0d12;
 }
 
 /*Header Styles Test*/
@@ -45,7 +45,6 @@
   position: relative;
   padding-top: 20px;
   margin-bottom: 30px;
-  max-width: 100%;
   height: 100px;
   background-color: var(--black);
 }
@@ -113,8 +112,7 @@
   cursor: pointer;
 }
 
-padding-right
-#signUpButton:hover {
+padding-right #signUpButton:hover {
   background-color: #001dd4;
 }
 
@@ -255,6 +253,8 @@ padding-right
   }
   #navMenuBackground {
     display: flex;
+    -webkit-box-shadow: 3px 3px 6px -3px #000000;
+    box-shadow: 3px 3px 6px -3px #000000;
   }
 
   #mobileHamburgerCont {
@@ -311,7 +311,7 @@ padding-right
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   #headerLeft {
     padding-left: 15px;
   }

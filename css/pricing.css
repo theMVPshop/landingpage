@@ -2,10 +2,12 @@
 
 body {
    font-family: 'Sen', sans-serif;
-}
-.bg-black {
    background-color: var(--black);
 }
+#cards-container {
+   background-color: var(--black);
+}
+
 .bg-grey {
    background-color: var(--dark-grey);
 }
@@ -120,3 +122,18 @@ span.badge, .accordion-button {
 #hamburgerCont a {
    cursor: pointer;
 }
+
+@media only screen and (max-width: 414px) {
+   #headerLeft {
+      padding-left: 30px;
+    }
+ }
+ 
+ @media only screen and (max-width: 300px) {
+   #headerLeft {
+     padding-left: 20px;
+   }
+ }
+ 
+ /*HAMBURGER STYLE END*/
+
