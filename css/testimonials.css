@@ -17,7 +17,7 @@ html{
 
 #navCont{
   width: 100% !important;
-  background-color: black;
+  background-color: var(--black);
 }
 
 #logo{
@@ -26,6 +26,26 @@ html{
 
 #mobileHamburger{
   padding-left: 15px;
+}
+
+#header{
+  height: 120px !important;
+}
+
+#headerLeft{
+  height: 120px !important;
+  margin-top: -20px;
+  padding-left: 4.1vw !important;
+}
+
+#headerRight{
+  height: 120px !important;
+  margin-top: -20px;
+  padding-right: 30px !important;
+}
+
+#container{
+  background-color: var(--black);
 }
 
 .line{
@@ -38,6 +58,7 @@ html{
 .main {
   margin-top: 80px;
   width: 375px;
+  margin-bottom: 50px;
 }
 
 .topRow{
@@ -199,9 +220,7 @@ h5{
   object-fit: contain;
 }
 
-#headerRight{
-  padding-right:0px !important;
-}
+
 
 @media (min-width: 768px){
   .line{
