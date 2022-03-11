@@ -116,7 +116,7 @@
   cursor: pointer;
 }
 
-padding-right #signUpButton:hover {
+#signUpButton:hover {
   background-color: #001dd4;
 }
 
