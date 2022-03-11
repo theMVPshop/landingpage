@@ -129,6 +129,7 @@
   text-decoration: none;
   color: white;
   border-bottom: 1px solid var(--black);
+  transition: border-bottom .3s ease;
 }
 
 #hamburgerCont > a:hover {
