@@ -116,12 +116,13 @@ span.badge, .accordion-button {
 
 /* navbar tweaking */
 
-#hamburgerCont {
-   color: white;
-}
+
 #hamburgerCont a {
    cursor: pointer;
+   color: white;
+   text-decoration: none;
 }
+
 
 @media only screen and (max-width: 414px) {
    #headerLeft {
