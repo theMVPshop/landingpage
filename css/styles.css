@@ -121,21 +121,6 @@
   background-color: #001dd4;
 }
 
-#mobileNavContentContainer > a {
-  text-decoration: none;
-}
-
-#hamburgerCont > a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid var(--black);
-  transition: border-bottom .3s ease;
-}
-
-#hamburgerCont > a:hover {
-  border-bottom: 1px solid white;
-}
-
 /*Header Styles End*/
 
 /*HAMBURGER STYLES*/
@@ -155,6 +140,7 @@
   font-size: 30px;
   color: #ffffff;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
 #mobile .hamburgerFixed {
@@ -216,6 +202,13 @@
 #hamburgerCont a {
   font-size: 20px;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom .3s ease;
+}
+
+#hamburgerCont > a:hover {
+  border-bottom: 1px solid white;
 }
 
 .navbar {
