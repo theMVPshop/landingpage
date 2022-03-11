@@ -76,7 +76,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 3vw;
+  /* padding-right: 3vw; */
   z-index: 9;
 }
 
@@ -156,6 +156,7 @@
   font-size: 30px;
   color: #ffffff;
   margin-bottom: 50px;
+  text-decoration: none;
 }
 
 #mobile .hamburgerFixed {
@@ -217,6 +218,13 @@
 #hamburgerCont a {
   font-size: 20px;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom 0.3s ease;
+}
+
+#hamburgerCont > a:hover {
+  border-bottom: 1px solid white;
 }
 
 .navbar {
