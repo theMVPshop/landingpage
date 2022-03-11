@@ -199,7 +199,7 @@
 
 #hamburgerCont a {
   font-size: 20px;
-  border-bottom: 0px solid white;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar {
