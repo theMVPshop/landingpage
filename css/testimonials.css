@@ -4,7 +4,12 @@
 
 body{
   font-family: Sen;
-  width: 100%;
+  width: 100% !important;
+}
+
+
+html{
+  width: max-content !important;
 }
 
 #hamburgerCont{
@@ -12,9 +17,19 @@ body{
 }
 
 #navCont{
-  width: 100%;
-  background-color: green;
+  width: 100% !important;
+  background-color: black;
 }
+
+#logo{
+  margin-left: 30px;
+}
+
+
+#mobileHamburger{
+  padding-left: 15px;
+}
+
 
 .line{
   width: 100vw;
@@ -187,6 +202,12 @@ h5{
   object-fit: contain;
 }
 
+
+#headerRight{
+  padding-right:0px !important;
+}
+
+
 @media (min-width: 768px){
   .line{
     width: 100vw;
@@ -258,10 +279,6 @@ h5{
   .buttonBox{
     width: 100%;
     margin:0;
-  }
-
-  
-
-  
+  } 
 }
 
