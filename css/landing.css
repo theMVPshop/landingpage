@@ -79,7 +79,7 @@ body {
   width: 220px;
   height: 70px;
   border: 0px;
-  background-color: #213fff;
+  background-color: var(--blue-secondary);
   transition: 0.3s;
   color: white;
   font-weight: 600;
@@ -221,7 +221,7 @@ body {
 }
 
 #footerSectionWide button:hover {
-  background-color: #001dd4;
+  background-color: rgba(48, 22, 195, 1);
 }
 
 /*Media Queries*/
@@ -342,6 +342,9 @@ body {
     height: 70px;
     color: white;
     font-weight: 700;
+  }
+
+  #footerSectionSmall button:hover {
   }
 }
 
