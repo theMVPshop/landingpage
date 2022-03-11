@@ -221,7 +221,7 @@ body {
 }
 
 #footerSectionWide button:hover {
-  background-color: rgba(48, 22, 195, 1);
+  background-color: var(--button-hover);
 }
 
 /*Media Queries*/
